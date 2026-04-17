@@ -1,0 +1,1671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- <script src="assets/protect.js"></script> -->
+  <title>Tharish Dental Clinic — Premium Dental Care</title>
+  <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div id="topbar">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex gap-4 flex-wrap">
+          <span class="info"><i class="fas fa-phone"></i>+91 98765 43210</span>
+          <span class="info d-none d-md-flex"><i class="fas fa-clock"></i>Mon–Sat: 9AM–7PM &nbsp;|&nbsp; Sun:
+            10AM–2PM</span>
+          <span class="info d-none d-lg-flex"><i class="fas fa-map-marker-alt"></i>Thailand</span>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <div class="lang-toggle" id="langToggle" role="group" aria-label="Language">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="th">TH</button>
+          </div>
+          <div class="socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo.png" alt="Tharish Dental Clinic Logo" height="42" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navM"><span
+          class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse justify-content-end" id="navM">
+        <ul class="navbar-nav align-items-center gap-1 ms-4">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <!-- CASE STUDIES DROPDOWN -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="caseDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Case Studies <i class="fas fa-chevron-down treat-arrow"></i>
+            </a>
+            <ul class="dropdown-menu treat-drop shadow" aria-labelledby="caseDrop">
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-tooth"></i>Implant Cases</a></li>
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-smile"></i>Orthodontic Cases</a>
+              </li>
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-star"></i>Aesthetic Cases</a></li>
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-crown"></i>Full Mouth Rehab</a>
+              </li>
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-child"></i>Pediatric Cases</a></li>
+            </ul>
+          </li>
+
+          <!-- TREATMENTS DROPDOWN -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="treatDrop" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+              Treatments <i class="fas fa-chevron-down treat-arrow"></i>
+            </a>
+            <ul class="dropdown-menu treat-drop shadow" aria-labelledby="treatDrop">
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="#treatments"><i class="fas fa-star"></i>Aesthetic Dentistry<i
+                    class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="#treatments">Teeth Whitening</a></li>
+                  <li><a class="dropdown-item" href="#treatments">Porcelain Veneers</a></li>
+                  <li><a class="dropdown-item" href="#treatments">Dental Bonding</a></li>
+                  <li><a class="dropdown-item" href="#treatments">Smile Makeover</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="dental-implants.html"><i class="fas fa-tooth"></i>Dental Implants<i
+                    class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="dental-implants.html?tab=single">Single Implants</a></li>
+                  <li><a class="dropdown-item" href="dental-implants.html?tab=multiple">Multiple Implants</a></li>
+                  <li><a class="dropdown-item" href="dental-implants.html?tab=allon4">All-on-4 Implants</a></li>
+                  <li><a class="dropdown-item" href="dental-implants.html?tab=mini">Mini Implants</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="#treatments"><i class="fas fa-syringe"></i>Endodontic Dentistry<i
+                    class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="#treatments">Root Canal Treatment</a></li>
+                  <li><a class="dropdown-item" href="#treatments">Retreatment</a></li>
+                  <li><a class="dropdown-item" href="#treatments">Pulp Capping</a></li>
+                  <li><a class="dropdown-item" href="#treatments">Apicoectomy</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="#treatments"><i class="fas fa-check-double"></i>General Dentistry<i
+                    class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="#treatments">Cleaning &amp; Scaling</a></li>
+                  <li><a class="dropdown-item" href="#treatments">Dental Fillings</a></li>
+                  <li><a class="dropdown-item" href="#treatments">X-Rays &amp; Diagnosis</a></li>
+                  <li><a class="dropdown-item" href="#treatments">Preventive Care</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="#treatments"><i class="fas fa-shield-alt"></i>Occlusion Dentistry<i
+                    class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="#treatments">Bite Correction</a></li>
+                  <li><a class="dropdown-item" href="#treatments">Night Guards</a></li>
+                  <li><a class="dropdown-item" href="#treatments">TMJ Treatment</a></li>
+                  <li><a class="dropdown-item" href="#treatments">Occlusal Splints</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="#treatments"><i class="fas fa-teeth-open"></i>Oral Surgery<i
+                    class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="#treatments">Tooth Extraction</a></li>
+                  <li><a class="dropdown-item" href="#treatments">Wisdom Teeth Removal</a></li>
+                  <li><a class="dropdown-item" href="#treatments">Bone Grafting</a></li>
+                  <li><a class="dropdown-item" href="#treatments">Jaw Surgery</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="#treatments"><i class="fas fa-smile"></i>Orthodontic Dentistry<i
+                    class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="#treatments">Metal Braces</a></li>
+                  <li><a class="dropdown-item" href="#treatments">Clear Aligners</a></li>
+                  <li><a class="dropdown-item" href="#treatments">Lingual Braces</a></li>
+                  <li><a class="dropdown-item" href="#treatments">Retainers</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="#treatments"><i class="fas fa-child"></i>Pediatric Dentistry<i
+                    class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="#treatments">Baby Teeth Care</a></li>
+                  <li><a class="dropdown-item" href="#treatments">Fluoride Treatment</a></li>
+                  <li><a class="dropdown-item" href="#treatments">Dental Sealants</a></li>
+                  <li><a class="dropdown-item" href="#treatments">Space Maintainers</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="#treatments"><i class="fas fa-leaf"></i>Periodontic Dentistry<i
+                    class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="#treatments">Gum Disease Treatment</a></li>
+                  <li><a class="dropdown-item" href="#treatments">Scaling &amp; Root Planing</a></li>
+                  <li><a class="dropdown-item" href="#treatments">Gum Surgery</a></li>
+                  <li><a class="dropdown-item" href="#treatments">Bone Grafting</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="#treatments"><i class="fas fa-crown"></i>Prosthodontic Dentistry<i
+                    class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="#treatments">Dental Crowns</a></li>
+                  <li><a class="dropdown-item" href="#treatments">Bridges</a></li>
+                  <li><a class="dropdown-item" href="#treatments">Dentures</a></li>
+                  <li><a class="dropdown-item" href="#treatments">Inlays &amp; Onlays</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="team.html">Doctors</a></li>
+          <!-- TECHNOLOGY DROPDOWN -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="techDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Technology <i class="fas fa-chevron-down treat-arrow"></i>
+            </a>
+            <ul class="dropdown-menu treat-drop shadow" aria-labelledby="techDrop">
+              <li><a class="dropdown-item" href="sterilization.html"><i class="fas fa-shield-virus"></i>Sterilization
+                  &amp; Quality</a></li>
+              <li><a class="dropdown-item" href="equipment-showroom.html"><i class="fas fa-microscope"></i>Equipment
+                  Showroom</a></li>
+              <li><a class="dropdown-item" href="complication-policy.html"><i class="fas fa-handshake"></i>Complication
+                  Policy</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-2"><a class="nav-link nav-cta" href="#appointment">Book Now</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO SLIDER ═══ -->
+  <section id="hero">
+    <div class="swiper hero-swiper" id="heroSlider">
+      <div class="swiper-wrapper">
+
+        <!-- SLIDE 1 -->
+        <div class="swiper-slide hslide-1">
+          <div class="hslide-bg"
+            style="background-image:url('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1600&q=80&auto=format&fit=crop')">
+          </div>
+          <div class="hslide-overlay"></div>
+          <div class="container hslide-inner">
+            <div class="row align-items-center min-vh-slide">
+              <div class="col-lg-7">
+                <div class="hslide-content">
+                  <span class="hero-etag"><i class="fas fa-tooth"></i>Advanced Implantology</span>
+                  <h1 class="hero-title">Permanent<br><span>Implants</span><br>You Can Trust</h1>
+                  <p class="hero-sub">Our implantologists hold international certifications with over 2,000 successful
+                    cases. Experience the confidence of a complete, natural smile.</p>
+                  <div class="d-flex gap-3 flex-wrap mb-3">
+                    <a href="#appointment" class="btn-hero-primary"><i class="fas fa-calendar-check"></i>Book
+                      Consultation</a>
+                    <a href="dental-implants.html" class="btn-hero-ghost"><i class="fas fa-tooth"></i>Explore
+                      Implants</a>
+                  </div>
+                  <div class="d-flex flex-wrap">
+                    <span class="hero-pill"><span class="dot"><i class="fas fa-award"></i></span>2,000+ Cases</span>
+                    <span class="hero-pill"><span class="dot"><i class="fas fa-check-circle"></i></span>98% Success
+                      Rate</span>
+                    <span class="hero-pill"><span class="dot"><i class="fas fa-clock"></i></span>Same-Day Loading</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 2 -->
+        <div class="swiper-slide hslide-2">
+          <div class="hslide-bg"
+            style="background-image:url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1600&q=80&auto=format&fit=crop')">
+          </div>
+          <div class="hslide-overlay"></div>
+          <div class="container hslide-inner">
+            <div class="row align-items-center min-vh-slide">
+              <div class="col-lg-7">
+                <div class="hslide-content">
+                  <span class="hero-etag"><i class="fas fa-smile"></i>Clear Aligner Dentistry</span>
+                  <h1 class="hero-title">Discreet<br><span>Invisalign</span><br>For Every Age</h1>
+                  <p class="hero-sub">Straighten your teeth comfortably with removable, near-invisible aligners guided
+                    by digital treatment planning and specialist monitoring.</p>
+                  <div class="d-flex gap-3 flex-wrap mb-3">
+                    <a href="#appointment" class="btn-hero-primary"><i class="fas fa-calendar-check"></i>Book
+                      Assessment</a>
+                    <a href="#treatments" class="btn-hero-ghost"><i class="fas fa-arrow-right"></i>View Aligner
+                      Options</a>
+                  </div>
+                  <div class="d-flex flex-wrap">
+                    <span class="hero-pill"><span class="dot"><i class="fas fa-eye"></i></span>Virtually Invisible</span>
+                    <span class="hero-pill"><span class="dot"><i class="fas fa-mobile-alt"></i></span>3D Progress
+                      Tracking</span>
+                    <span class="hero-pill"><span class="dot"><i class="fas fa-calendar-alt"></i></span>Flexible
+                      Follow-Ups</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 3 -->
+        <div class="swiper-slide hslide-3">
+          <div class="hslide-bg"
+            style="background-image:url('https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=1600&q=80&auto=format&fit=crop')">
+          </div>
+          <div class="hslide-overlay"></div>
+          <div class="container hslide-inner">
+            <div class="row align-items-center min-vh-slide">
+              <div class="col-lg-7">
+                <div class="hslide-content">
+                  <span class="hero-etag"><i class="fas fa-star"></i>Aesthetic Dentistry</span>
+                  <h1 class="hero-title">Natural<br><span>Ceramic Veneer</span><br>Smile Design</h1>
+                  <p class="hero-sub">Ultra-thin ceramic veneers are designed to match your face and bite, creating a
+                    bright, balanced smile that still looks naturally yours.</p>
+                  <div class="d-flex gap-3 flex-wrap mb-3">
+                    <a href="#appointment" class="btn-hero-primary"><i class="fas fa-calendar-check"></i>Book Smile
+                      Design</a>
+                    <a href="#treatments" class="btn-hero-ghost"><i class="fas fa-arrow-right"></i>Explore
+                      Veneers</a>
+                  </div>
+                  <div class="d-flex flex-wrap">
+                    <span class="hero-pill"><span class="dot"><i class="fas fa-palette"></i></span>Digital Preview</span>
+                    <span class="hero-pill"><span class="dot"><i class="fas fa-gem"></i></span>Premium Ceramic</span>
+                    <span class="hero-pill"><span class="dot"><i class="fas fa-smile"></i></span>Customized Shape</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 4 -->
+        <div class="swiper-slide hslide-4">
+          <div class="hslide-bg"
+            style="background-image:url('https://images.unsplash.com/photo-1584515933487-779824d29309?w=1600&q=80&auto=format&fit=crop')">
+          </div>
+          <div class="hslide-overlay"></div>
+          <div class="container hslide-inner">
+            <div class="row align-items-center min-vh-slide">
+              <div class="col-lg-7">
+                <div class="hslide-content">
+                  <span class="hero-etag"><i class="fas fa-child"></i>Kid-Friendly Dentistry</span>
+                  <h1 class="hero-title">Gentle<br><span>Pediatric</span><br>Dentistry Care</h1>
+                  <p class="hero-sub">From first checkups to preventive care, our pediatric team creates a calm,
+                    positive experience that helps children build lifelong oral health habits.</p>
+                  <div class="d-flex gap-3 flex-wrap mb-3">
+                    <a href="#appointment" class="btn-hero-primary"><i class="fas fa-calendar-check"></i>Book Child
+                      Visit</a>
+                    <a href="#treatments" class="btn-hero-ghost"><i class="fas fa-arrow-right"></i>See Pediatric
+                      Services</a>
+                  </div>
+                  <div class="d-flex flex-wrap">
+                    <span class="hero-pill"><span class="dot"><i class="fas fa-heart"></i></span>Comfort-First Care</span>
+                    <span class="hero-pill"><span class="dot"><i class="fas fa-shield-alt"></i></span>Preventive Focus</span>
+                    <span class="hero-pill"><span class="dot"><i class="fas fa-smile-beam"></i></span>Friendly Team</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /swiper-wrapper -->
+
+      <!-- Navigation -->
+      <button class="hslide-arrow hslide-prev" id="hsPrev" aria-label="Previous slide"><i
+          class="fas fa-chevron-left"></i></button>
+      <button class="hslide-arrow hslide-next" id="hsNext" aria-label="Next slide"><i
+          class="fas fa-chevron-right"></i></button>
+
+      <!-- Pagination -->
+      <div class="hslide-dots" id="hsDotsCont"></div>
+
+      <!-- Progress bar -->
+      <div class="hslide-progress">
+        <div class="hslide-progress-bar" id="hsProgressBar"></div>
+      </div>
+    </div>
+
+    <!-- STAT BAR -->
+    <div class="container" style="position:relative;z-index:99">
+      <div class="col-xl-10 mx-auto mt-5">
+        <div class="stat-bar rv">
+          <div class="st">
+            <div class="st-num" data-count="15">0</div>
+            <div class="st-lbl">Years Experience</div>
+          </div>
+          <div class="st">
+            <div class="st-num" data-count="8000">0</div>
+            <div class="st-lbl">Smiles Transformed</div>
+          </div>
+          <div class="st">
+            <div class="st-num" data-count="10">0</div>
+            <div class="st-lbl">Dental Specialties</div>
+          </div>
+          <div class="st">
+            <div class="st-num" data-count="99">0</div>
+            <div class="st-lbl">% Patient Satisfaction</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SERVICES ═══ -->
+  <section id="services">
+    <div class="container">
+      <div class="text-center mb-5 rv">
+        <span class="tag">Dental Practice</span>
+        <h2 class="section-title">Explore Our Services</h2>
+        <p class="lead-text mx-auto" style="max-width:510px">From smile makeovers to complex implant surgery — ten
+          disciplines, one compassionate team.</p>
+      </div>
+      <div class="row g-3 services-grid">
+        <div class="col-6 col-md-3 col-lg-3 rv d1">
+          <div class="svc">
+            <div class="svc-ic"><i class="fas fa-star"></i></div>
+            <div class="svc-ttl">Aesthetic Dentistry</div>
+            <div class="svc-dsc">Veneers, whitening and Hollywood smile design.</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-3 rv d2">
+          <div class="svc">
+            <div class="svc-ic"><i class="fas fa-tooth"></i></div>
+            <div class="svc-ttl">Dental Implants</div>
+            <div class="svc-dsc">Permanent titanium tooth roots with ceramic crowns.</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-3 rv d3">
+          <div class="svc">
+            <div class="svc-ic"><i class="fas fa-syringe"></i></div>
+            <div class="svc-ttl">Endodontics</div>
+            <div class="svc-dsc">Painless root canal treatment with rotary systems.</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-3 rv d4">
+          <div class="svc">
+            <div class="svc-ic"><i class="fas fa-check-double"></i></div>
+            <div class="svc-ttl">General Dentistry</div>
+            <div class="svc-dsc">Checkups, fillings, X-rays and preventive care.</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-3 rv d1">
+          <div class="svc">
+            <div class="svc-ic"><i class="fas fa-shield-alt"></i></div>
+            <div class="svc-ttl">Occlusion Dentistry</div>
+            <div class="svc-dsc">TMJ therapy, night guards and bite correction.</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-3 rv d2">
+          <div class="svc">
+            <div class="svc-ic"><i class="fas fa-teeth-open"></i></div>
+            <div class="svc-ttl">Oral Surgery</div>
+            <div class="svc-dsc">Wisdom teeth, jaw surgery &amp; cyst removal.</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-3 rv d3">
+          <div class="svc">
+            <div class="svc-ic"><i class="fas fa-smile"></i></div>
+            <div class="svc-ttl">Orthodontics</div>
+            <div class="svc-dsc">Braces, clear aligners &amp; retainers for a perfect bite.</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-3 rv d4">
+          <div class="svc">
+            <div class="svc-ic"><i class="fas fa-child"></i></div>
+            <div class="svc-ttl">Pediatric Dentistry</div>
+            <div class="svc-dsc">Gentle, child-friendly care from infants to teens.</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-3 rv d1">
+          <div class="svc">
+            <div class="svc-ic"><i class="fas fa-leaf"></i></div>
+            <div class="svc-ttl">Periodontics</div>
+            <div class="svc-dsc">Laser gum therapy, scaling and bone regeneration.</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-3 rv d2">
+          <div class="svc">
+            <div class="svc-ic"><i class="fas fa-crown"></i></div>
+            <div class="svc-ttl">Prosthodontics</div>
+            <div class="svc-dsc">Crowns, bridges, dentures and full mouth rehab.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 col-md-10 rl">
+          <div class="abt-img-wrap">
+            <div class="abt-img-placeholder">
+              <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?w=800&q=80&auto=format&fit=crop"
+                alt="Tharish Dental Clinic interior" loading="lazy" />
+            </div>
+            <div class="abt-badge">
+              <div class="abt-yr">15+</div>
+              <div class="abt-yr-lbl">Years of<br>Excellence</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 rr">
+          <span class="tag">Get To Know About Us</span>
+          <h2 class="section-title">Welcome to<br>Tharish Dental Clinic</h2>
+          <div class="divline"></div>
+          <p class="lead-text mb-3">Founded in 2009, Tharish Dental Clinic has grown into a multi-specialty centre of
+            dental excellence. Our philosophy is simple — every patient deserves the quality of care we'd provide to our
+            own families.</p>
+          <p class="lead-text mb-4">We house ten specialist disciplines under one roof, in a clinic designed to dissolve
+            anxiety and replace it with confidence.</p>
+          <div class="cnt-row">
+            <div class="cnt-item">
+              <div class="cnt-num" data-count="8000">0</div>
+              <div class="cnt-lbl">Satisfied Patients</div>
+            </div>
+            <div class="cnt-item">
+              <div class="cnt-num" data-count="3200">0</div>
+              <div class="cnt-lbl">Cases Done</div>
+            </div>
+            <div class="cnt-item">
+              <div class="cnt-num" data-count="12">0</div>
+              <div class="cnt-lbl">Expert Dentists</div>
+            </div>
+          </div>
+          <div class="d-flex gap-3 flex-wrap mt-2">
+            <a href="#team" class="btn-gold">Meet Our Team <i class="fas fa-arrow-right"></i></a>
+            <a href="#appointment" class="btn-outline">Book Consultation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOUNDERS / ABOUT US ═══ -->
+  <section id="founders">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="text-center mb-5 rv">
+        <span class="tag"><i class="fas fa-users"></i>Our Story</span>
+        <h2 class="section-title">About Tharish Dental Clinic</h2>
+        <p class="lead-text mx-auto" style="max-width:600px">Founded in 2009 by two visionary specialists, Tharish
+          Dental Clinic was built on a single promise — to deliver world-class oral care with genuine compassion.
+          Today, our founders continue to lead every aspect of clinical excellence.</p>
+      </div>
+
+      <!-- Mission & Vision row -->
+      <div class="row g-4 mb-4">
+        <div class="col-md-4 rv d1">
+          <div class="fnd-pillar">
+            <div class="fnd-pillar-ic"><i class="fas fa-bullseye"></i></div>
+            <div class="fnd-pillar-ttl">Our Mission</div>
+            <p class="fnd-pillar-txt">To make exceptional dental care accessible, pain-free, and transparent —
+              treating every patient as family, not a file number.</p>
+          </div>
+        </div>
+        <div class="col-md-4 rv d2">
+          <div class="fnd-pillar">
+            <div class="fnd-pillar-ic"><i class="fas fa-eye"></i></div>
+            <div class="fnd-pillar-ttl">Our Vision</div>
+            <p class="fnd-pillar-txt">To be Southeast Asia's most trusted multi-specialty dental centre, setting the
+              gold standard for clinical outcomes and patient experience.</p>
+          </div>
+        </div>
+        <div class="col-md-4 rv d3">
+          <div class="fnd-pillar">
+            <div class="fnd-pillar-ic"><i class="fas fa-heart"></i></div>
+            <div class="fnd-pillar-ttl">Our Values</div>
+            <p class="fnd-pillar-txt">Integrity in every diagnosis, precision in every procedure, and empathy in every
+              conversation — before, during, and after treatment.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Read More CTA -->
+      <div class="text-center rv">
+        <a href="about.html" class="btn-gold"><i class="fas fa-arrow-right"></i>Read More About Us</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ PROCEDURES WHEEL ═══ -->
+  <section id="procedures">
+    <div class="container">
+      <div class="text-center mb-4 rv"><span class="tag">Dental Procedures</span>
+        <h2 class="section-title">Our Core Treatment Areas</h2>
+      </div>
+      <div class="row align-items-center g-4">
+        <div class="col-lg-3 rl">
+          <div class="proc-item">
+            <div class="proc-ic"><i class="fas fa-tooth"></i></div>
+            <div class="proc-ttl">Dental Implants</div>
+            <div class="proc-sub">Titanium root + ceramic crown for permanent restoration</div>
+          </div>
+          <div class="proc-item mt-2">
+            <div class="proc-ic"><i class="fas fa-syringe"></i></div>
+            <div class="proc-ttl">Root Canal Treatment</div>
+            <div class="proc-sub">Pain-free endodontic therapy saving natural teeth</div>
+          </div>
+          <div class="proc-item mt-2">
+            <div class="proc-ic"><i class="fas fa-leaf"></i></div>
+            <div class="proc-ttl">Gum Disease Treatment</div>
+            <div class="proc-sub">Laser periodontal therapy for healthy gums</div>
+          </div>
+        </div>
+        <div class="col-lg-6 rv">
+          <div class="text-center" style="padding:3rem 0">
+            <div class="proc-ring-wrap">
+              <div class="proc-r1"></div>
+              <div class="proc-r2"></div>
+              <div class="proc-center-icon"><i class="fas fa-tooth"></i></div>
+            </div>
+            <h3 style="font-size:2rem;margin-top:2rem;margin-bottom:.5rem">Complete Oral Health</h3>
+            <p class="lead-text" style="max-width:370px;margin:0 auto 1.4rem">10 specialist disciplines, one world-class
+              clinic, your lifelong smile partner.</p>
+            <a href="#treatments" class="btn-gold">View All Treatments <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 rr">
+          <div class="proc-item">
+            <div class="proc-ic"><i class="fas fa-star"></i></div>
+            <div class="proc-ttl">Smile Makeover</div>
+            <div class="proc-sub">Digital smile design, veneers &amp; whitening combined</div>
+          </div>
+          <div class="proc-item mt-2">
+            <div class="proc-ic"><i class="fas fa-check-double"></i></div>
+            <div class="proc-ttl">Regular Check-Up</div>
+            <div class="proc-sub">Comprehensive exam, digital X-ray &amp; cleaning</div>
+          </div>
+          <div class="proc-item mt-2">
+            <div class="proc-ic"><i class="fas fa-child"></i></div>
+            <div class="proc-ttl">Pediatric Care</div>
+            <div class="proc-sub">Gentle, kid-friendly dentistry in our dedicated wing</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TREATMENTS LIST ═══ -->
+  <section id="treatments">
+    <div class="container">
+      <div class="row align-items-end mb-4 rv">
+        <div class="col-lg-7">
+          <span class="tag">All Treatments</span>
+          <h2 class="section-title">Multiple Specialties under one roof</h2>
+          <p class="lead-text">Tap any category to explore subcategories and specialist details.</p>
+        </div>
+        <div class="col-lg-5 text-lg-end mt-3 mt-lg-0"><a href="#appointment" class="btn-gold">Book a Consultation</a>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap gap-2 mb-3 rv">
+        <button class="t-tab active" data-tab="all">All Specialties</button>
+        <button class="t-tab" data-tab="surgical">Surgical</button>
+        <button class="t-tab" data-tab="cosmetic">Cosmetic</button>
+        <button class="t-tab" data-tab="preventive">Preventive</button>
+      </div>
+      <div id="t-grid" class="t-grid">
+        <div class="t-item rv d1" data-cat="cosmetic">
+          <div class="t-num">01</div>
+          <div>
+            <div class="t-name">Aesthetic Dentistry</div>
+            <div class="t-sub">Veneers · Whitening · DSD</div>
+          </div><i class="fas fa-chevron-right t-arr"></i>
+        </div>
+        <div class="t-item rv d2" data-cat="surgical cosmetic">
+          <div class="t-num">02</div>
+          <div>
+            <div class="t-name">Dental Implants</div>
+            <div class="t-sub">Single · All-on-4 · Bone Graft</div>
+          </div><i class="fas fa-chevron-right t-arr"></i>
+        </div>
+        <div class="t-item rv d3" data-cat="surgical">
+          <div class="t-num">03</div>
+          <div>
+            <div class="t-name">Endodontic Dentistry</div>
+            <div class="t-sub">RCT · Microsurgery · Apicectomy</div>
+          </div><i class="fas fa-chevron-right t-arr"></i>
+        </div>
+        <div class="t-item rv d4" data-cat="preventive">
+          <div class="t-num">04</div>
+          <div>
+            <div class="t-name">General Dentistry</div>
+            <div class="t-sub">Check-up · Fillings · X-Ray</div>
+          </div><i class="fas fa-chevron-right t-arr"></i>
+        </div>
+        <div class="t-item rv d1" data-cat="preventive">
+          <div class="t-num">05</div>
+          <div>
+            <div class="t-name">Occlusion Dentistry</div>
+            <div class="t-sub">TMJ · Night Guard · Bruxism</div>
+          </div><i class="fas fa-chevron-right t-arr"></i>
+        </div>
+        <div class="t-item rv d2" data-cat="surgical">
+          <div class="t-num">06</div>
+          <div>
+            <div class="t-name">Oral Surgery</div>
+            <div class="t-sub">Extraction · Jaw · Cyst</div>
+          </div><i class="fas fa-chevron-right t-arr"></i>
+        </div>
+        <div class="t-item rv d3" data-cat="cosmetic preventive">
+          <div class="t-num">07</div>
+          <div>
+            <div class="t-name">Orthodontic Dentistry</div>
+            <div class="t-sub">Braces · Aligners · Retainers</div>
+          </div><i class="fas fa-chevron-right t-arr"></i>
+        </div>
+        <div class="t-item rv d4" data-cat="preventive">
+          <div class="t-num">08</div>
+          <div>
+            <div class="t-name">Pediatric Dentistry</div>
+            <div class="t-sub">Child · Fluoride · Sealants</div>
+          </div><i class="fas fa-chevron-right t-arr"></i>
+        </div>
+        <div class="t-item rv d1" data-cat="surgical preventive">
+          <div class="t-num">09</div>
+          <div>
+            <div class="t-name">Periodontic Dentistry</div>
+            <div class="t-sub">Scaling · Laser · Gum Graft</div>
+          </div><i class="fas fa-chevron-right t-arr"></i>
+        </div>
+        <div class="t-item rv d2" data-cat="cosmetic">
+          <div class="t-num">10</div>
+          <div>
+            <div class="t-name">Prosthodontic Dentistry</div>
+            <div class="t-sub">Crowns · Bridges · Dentures</div>
+          </div><i class="fas fa-chevron-right t-arr"></i>
+        </div>
+      </div>
+      <!-- Subcategory showcase -->
+      <!-- <div class="row g-4 mt-3">
+        <div class="col-md-4 rv d1">
+          <div style="background:#fff;border:1.5px solid var(--border);border-radius:14px;padding:1.6rem">
+            <div
+              style="font-size:.63rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:.75rem">
+              Implants</div>
+            <div class="d-flex flex-wrap">
+              <span class="sub-chip"><i class="fas fa-circle"></i>Single Tooth</span>
+              <span class="sub-chip"><i class="fas fa-circle"></i>All-on-4</span>
+              <span class="sub-chip"><i class="fas fa-circle"></i>All-on-6</span>
+              <span class="sub-chip"><i class="fas fa-circle"></i>Mini Implants</span>
+              <span class="sub-chip"><i class="fas fa-circle"></i>Immediate Load</span>
+              <span class="sub-chip"><i class="fas fa-circle"></i>Bone Grafting</span>
+              <span class="sub-chip"><i class="fas fa-circle"></i>Sinus Lift</span>
+              <span class="sub-chip"><i class="fas fa-circle"></i>Zygomatic</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 rv d2">
+          <div style="background:#fff;border:1.5px solid var(--border);border-radius:14px;padding:1.6rem">
+            <div
+              style="font-size:.63rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:.75rem">
+              Aesthetics</div>
+            <div class="d-flex flex-wrap">
+              <span class="sub-chip"><i class="fas fa-circle"></i>Porcelain Veneers</span>
+              <span class="sub-chip"><i class="fas fa-circle"></i>Composite</span>
+              <span class="sub-chip"><i class="fas fa-circle"></i>Whitening</span>
+              <span class="sub-chip"><i class="fas fa-circle"></i>Smile Makeover</span>
+              <span class="sub-chip"><i class="fas fa-circle"></i>Hollywood Smile</span>
+              <span class="sub-chip"><i class="fas fa-circle"></i>Gum Contouring</span>
+              <span class="sub-chip"><i class="fas fa-circle"></i>Bonding</span>
+              <span class="sub-chip"><i class="fas fa-circle"></i>DSD</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 rv d3">
+          <div style="background:#fff;border:1.5px solid var(--border);border-radius:14px;padding:1.6rem">
+            <div
+              style="font-size:.63rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:.75rem">
+              Orthodontics</div>
+            <div class="d-flex flex-wrap">
+              <span class="sub-chip"><i class="fas fa-circle"></i>Metal Braces</span>
+              <span class="sub-chip"><i class="fas fa-circle"></i>Ceramic</span>
+              <span class="sub-chip"><i class="fas fa-circle"></i>Lingual Braces</span>
+              <span class="sub-chip"><i class="fas fa-circle"></i>Clear Aligners</span>
+              <span class="sub-chip"><i class="fas fa-circle"></i>Retainers</span>
+              <span class="sub-chip"><i class="fas fa-circle"></i>Jaw Expansion</span>
+              <span class="sub-chip"><i class="fas fa-circle"></i>Space Maintainers</span>
+              <span class="sub-chip"><i class="fas fa-circle"></i>Interceptive</span>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- ═══ TEAM ═══ -->
+  <section id="team">
+    <div class="container">
+      <div class="text-center mb-5 rv">
+        <div class="tag d-flex justify-content-center">Best Specialists</div>
+        <h2 class="section-title gradient-title">Meet Our Founding Doctors</h2>
+        <p class="lead-text mx-auto" style="max-width:490px">International training, local dedication. Our team brings
+          world-class expertise to every chair.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3 rv d1">
+          <div class="tm-card">
+            <div class="tm-photo"><img
+                src="https://images.unsplash.com/photo-1612531386530-97286d97c2d2?w=500&q=80&auto=format&fit=crop"
+                alt="Dr. Tharish K." loading="lazy" />
+              <div class="tm-overlay"></div>
+
+            </div>
+            <div class="tm-body">
+              <div class="tm-name">Dr. Tharish K.</div>
+              <div class="tm-spec">BDS, MDS — Implantologist</div>
+              <div class="tm-bio">Pioneer in implantology with 15+ years. Trained at European institutes. Over 2,000
+                successful implant cases.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 rv d2">
+          <div class="tm-card">
+            <div class="tm-photo"><img
+                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=500&q=80&auto=format&fit=crop"
+                alt="Dr. Priya R." loading="lazy" />
+              <div class="tm-overlay"></div>
+
+            </div>
+            <div class="tm-body">
+              <div class="tm-name">Dr. Priya R.</div>
+              <div class="tm-spec">BDS, MDS — Orthodontist</div>
+              <div class="tm-bio">Certified clear aligner specialist. Transformed smiles for 3,000+ patients using
+                cutting-edge aligner technology.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 rv d3">
+          <div class="tm-card">
+            <div class="tm-photo"><img
+                src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=500&q=80&auto=format&fit=crop"
+                alt="Dr. Arjun M." loading="lazy" />
+              <div class="tm-overlay"></div>
+
+            </div>
+            <div class="tm-body">
+              <div class="tm-name">Dr. Arjun M.</div>
+              <div class="tm-spec">BDS, MDS — Prosthodontist</div>
+              <div class="tm-bio">Expert in full-mouth rehabilitation and hyper-realistic ceramic veneers. Smile
+                makeovers that look completely natural.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 rv d4">
+          <div class="tm-card">
+            <div class="tm-photo"><img
+                src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?w=500&q=80&auto=format&fit=crop"
+                alt="Dr. Meena S." loading="lazy" />
+              <div class="tm-overlay"></div>
+
+            </div>
+            <div class="tm-body">
+              <div class="tm-name">Dr. Meena S.</div>
+              <div class="tm-spec">BDS, MDS — Pedodontist</div>
+              <div class="tm-bio">Specialist in child-friendly dental care with behaviour management techniques in our
+                dedicated pediatric wing.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ APPOINTMENT ═══ -->
+  <section id="appointment">
+    <div class="container position-relative" style="z-index:2">
+      <div class="row align-items-start g-5">
+        <div class="col-lg-5 rl">
+          <span class="appt-bdg"><i class="fas fa-calendar-check"></i>Book An Appointment</span>
+          <h2 class="appt-ttl">Schedule Your<br>Visit Today</h2>
+          <p class="appt-sub">Our team confirms your slot within 2 hours. Same-day emergency dental care available.</p>
+          <div class="mt-4">
+            <div class="ai-item">
+              <div class="ai-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <div class="ai-lbl">Call Us</div>
+                <div class="ai-val">+91 98765 43210</div>
+              </div>
+            </div>
+            <div class="ai-item">
+              <div class="ai-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <div class="ai-lbl">Hours</div>
+                <div class="ai-val">Mon–Sat: 9AM–7PM &nbsp;|&nbsp; Sun: 10AM–2PM</div>
+              </div>
+            </div>
+            <div class="ai-item">
+              <div class="ai-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <div class="ai-lbl">Location</div>
+                <div class="ai-val">123 Dental Plaza, Thailand, TN</div>
+              </div>
+            </div>
+            <div class="ai-item">
+              <div class="ai-icon"><i class="fab fa-whatsapp"></i></div>
+              <div>
+                <div class="ai-lbl">WhatsApp</div>
+                <div class="ai-val">+91 98765 43210</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 rr">
+          <div class="appt-form">
+            <h4 style="font-family:'DM Serif Display',serif;font-size:1.38rem;margin-bottom:1.4rem;color:var(--text)">
+              Request an Appointment</h4>
+            <div class="row g-3">
+              <div class="col-sm-6"><label class="form-label">Full Name</label><input type="text" class="form-control"
+                  placeholder="Your full name" /></div>
+              <div class="col-sm-6"><label class="form-label">Phone Number</label><input type="tel" class="form-control"
+                  placeholder="+91 00000 00000" /></div>
+              <div class="col-sm-6"><label class="form-label">Email Address</label><input type="email"
+                  class="form-control" placeholder="your@email.com" /></div>
+              <div class="col-sm-6"><label class="form-label">Select Treatment</label>
+                <select class="form-select">
+                  <option value="">Choose treatment</option>
+                  <option>Dental Implants</option>
+                  <option>Orthodontic Dentistry</option>
+                  <option>Aesthetic Dentistry</option>
+                  <option>Periodontic Dentistry</option>
+                  <option>Prosthodontic Dentistry</option>
+                  <option>Endodontic Dentistry</option>
+                  <option>Pediatric Dentistry</option>
+                  <option>Occlusion Dentistry</option>
+                  <option>Oral Surgery</option>
+                  <option>General Dentistry</option>
+                </select>
+              </div>
+              <div class="col-sm-6"><label class="form-label">Preferred Date</label><input type="date"
+                  class="form-control" /></div>
+              <div class="col-sm-6"><label class="form-label">Preferred Time</label>
+                <select class="form-select">
+                  <option value="">Select time slot</option>
+                  <option>09:00 AM – 10:00 AM</option>
+                  <option>10:00 AM – 11:00 AM</option>
+                  <option>11:00 AM – 12:00 PM</option>
+                  <option>02:00 PM – 03:00 PM</option>
+                  <option>03:00 PM – 04:00 PM</option>
+                  <option>04:00 PM – 05:00 PM</option>
+                </select>
+              </div>
+              <div class="col-12"><label class="form-label">Message (Optional)</label><textarea class="form-control"
+                  rows="3" placeholder="Describe your concern..."></textarea></div>
+              <div class="col-12"><button class="btn-gold w-100 justify-content-center" id="apptBtn"
+                  style="border:none;font-size:.84rem;padding:.95rem 2rem"><i class="fas fa-calendar-check"></i>Confirm
+                  Appointment</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ EQUIPMENT ═══ -->
+  <section id="equipment">
+    <div class="container">
+      <div class="text-center mb-5 rv">
+        <span class="tag">Our Technology</span>
+        <h2 class="section-title">Equipment &amp; Sterilization</h2>
+        <p class="lead-text mx-auto" style="max-width:510px">State-of-the-art diagnostics and treatment tools,
+          maintained to international clinical standards.</p>
+      </div>
+      <div class="row g-3 mb-5">
+        <div class="col-6 col-md-3 rv d1">
+          <div class="s-chip">
+            <div class="s-chip-n">Class B</div>
+            <div class="s-chip-l">Autoclave</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 rv d2">
+          <div class="s-chip">
+            <div class="s-chip-n">100%</div>
+            <div class="s-chip-l">Sterilization</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 rv d3">
+          <div class="s-chip">
+            <div class="s-chip-n">ISO</div>
+            <div class="s-chip-l">13485 Compliant</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 rv d4">
+          <div class="s-chip">
+            <div class="s-chip-n">48hr</div>
+            <div class="s-chip-l">Post-Op Follow-Up</div>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4 mb-5">
+        <div class="col-sm-6 col-lg-4 rv d1">
+          <div class="eq-card">
+            <div class="eq-img"><i class="fas fa-radiation"></i></div>
+            <div class="eq-body">
+              <div class="eq-tag">Imaging</div>
+              <div class="eq-ttl">3D Cone Beam CT Scanner</div>
+              <div class="eq-txt">Precise 3D imaging for implant planning, surgical mapping and orthodontic analysis —
+                minimal radiation.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 rv d2">
+          <div class="eq-card">
+            <div class="eq-img"><i class="fas fa-tablet-alt"></i></div>
+            <div class="eq-body">
+              <div class="eq-tag">Digital Impressions</div>
+              <div class="eq-ttl">Intraoral 3D Scanner</div>
+              <div class="eq-txt">No impression putty — fast, comfortable digital scans for crowns, aligners and
+                dentures.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 rv d3">
+          <div class="eq-card">
+            <div class="eq-img"><i class="fas fa-bolt"></i></div>
+            <div class="eq-body">
+              <div class="eq-tag">Soft Tissue</div>
+              <div class="eq-ttl">Diode Laser System</div>
+              <div class="eq-txt">Laser gum therapy, decontamination and whitening with faster healing and less
+                discomfort.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 rv d1">
+          <div class="eq-card">
+            <div class="eq-img"><i class="fas fa-cog"></i></div>
+            <div class="eq-body">
+              <div class="eq-tag">Restorations</div>
+              <div class="eq-ttl">CAD/CAM Milling Unit</div>
+              <div class="eq-txt">In-house ceramic and zirconia milling for same-day crowns with perfect fit and natural
+                translucency.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 rv d2">
+          <div class="eq-card">
+            <div class="eq-img"><i class="fas fa-wind"></i></div>
+            <div class="eq-body">
+              <div class="eq-tag">Safety</div>
+              <div class="eq-ttl">HEPA Air Purification</div>
+              <div class="eq-txt">Hospital-grade air filtration with continuous UVC sterilization in all treatment
+                rooms.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 rv d3">
+          <div class="eq-card">
+            <div class="eq-img"><i class="fas fa-microscope"></i></div>
+            <div class="eq-body">
+              <div class="eq-tag">Precision</div>
+              <div class="eq-ttl">Surgical Microscope</div>
+              <div class="eq-txt">High-magnification optics for endodontic microsurgery and precision periodontal
+                procedures.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TESTIMONIALS ═══ -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="text-center mb-5 rv"><span class="tag">Patient Stories</span>
+        <h2 class="section-title">What Our Patients Say</h2>
+      </div>
+
+      <!-- Swiper testimonials -->
+      <div class="testi-swiper-wrap rv">
+        <div class="swiper testi-swiper">
+          <div class="swiper-wrapper">
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="testi">
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-txt">"I was terrified of implants. The team at Tharish made the process so seamless —
+                  from
+                  the 3D scan to the final crown. My smile has never looked better."</div>
+                <div class="testi-auth">
+                  <div class="testi-av">R</div>
+                  <div>
+                    <div class="testi-name">Ramesh Nair</div>
+                    <div class="testi-role">Dental Implant Patient</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="testi">
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-txt">"My daughter was so nervous about her first dental visit. The paediatric team was
+                  absolutely wonderful — patient, gentle, and she was singing on the way home!"</div>
+                <div class="testi-auth">
+                  <div class="testi-av">S</div>
+                  <div>
+                    <div class="testi-name">Sangeetha Pillai</div>
+                    <div class="testi-role">Parent, Pediatric Patient</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="testi">
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-txt">"I came in for aligners and left with a complete smile makeover. Dr. Arjun's
+                  attention to detail is extraordinary — the veneers look so natural nobody believes they're not real!"
+                </div>
+                <div class="testi-auth">
+                  <div class="testi-av">V</div>
+                  <div>
+                    <div class="testi-name">Vikram Anand</div>
+                    <div class="testi-role">Smile Makeover Patient</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <div class="testi">
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-txt">"The CAD/CAM same-day crown was a game changer — I walked in with a broken tooth
+                  and walked out with a perfect ceramic crown in under two hours. Simply incredible."</div>
+                <div class="testi-auth">
+                  <div class="testi-av">A</div>
+                  <div>
+                    <div class="testi-name">Ananya Krishnan</div>
+                    <div class="testi-role">Same-Day Crown Patient</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="swiper-slide">
+              <div class="testi">
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-txt">"After years of hiding my smile, the orthodontic team gave me confidence I never
+                  thought possible. The clear aligners were comfortable and the results exceeded every expectation."
+                </div>
+                <div class="testi-auth">
+                  <div class="testi-av">K</div>
+                  <div>
+                    <div class="testi-name">Karan Mehta</div>
+                    <div class="testi-role">Clear Aligner Patient</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="swiper-slide">
+              <div class="testi">
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-txt">"Dr. Tharish performed my full mouth rehabilitation with such precision and care.
+                  The whole team takes time to explain every step — I never felt like just a patient, I felt like
+                  family."</div>
+                <div class="testi-auth">
+                  <div class="testi-av">L</div>
+                  <div>
+                    <div class="testi-name">Lakshmi Rajan</div>
+                    <div class="testi-role">Full Mouth Rehab Patient</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 7 -->
+            <div class="swiper-slide">
+              <div class="testi">
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-txt">"The laser gum treatment was painless and healed faster than I expected. I had
+                  avoided the dentist for years out of fear — Tharish Dental completely changed that for me."</div>
+                <div class="testi-auth">
+                  <div class="testi-av">M</div>
+                  <div>
+                    <div class="testi-name">Mohan Subramaniam</div>
+                    <div class="testi-role">Periodontic Patient</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /swiper-wrapper -->
+
+          <!-- Pagination (inside swiper so Swiper positions it correctly) -->
+          <div class="swiper-pagination ts-dots" id="tsDots"></div>
+        </div><!-- /testi-swiper -->
+
+        <!-- Navigation -->
+        <button class="ts-arrow ts-prev" id="tsPrev" aria-label="Previous testimonial"><i
+            class="fas fa-chevron-left"></i></button>
+        <button class="ts-arrow ts-next" id="tsNext" aria-label="Next testimonial"><i
+            class="fas fa-chevron-right"></i></button>
+
+      </div><!-- /testi-swiper-wrap -->
+
+    </div>
+  </section>
+
+  <!-- ═══ BEFORE & AFTER ═══ -->
+  <!-- <section id="before-after">
+    <div class="container">
+      <div class="text-center mb-5 rv">
+        <span class="tag"><i class="fas fa-magic"></i>Real Patient Results</span>
+        <h2 class="section-title">Before &amp; After</h2>
+        <p class="lead-text mx-auto" style="max-width:520px;">Drag the slider to reveal the transformation. Every result shown is from a real patient treated at Tharish Dental Clinic.</p>
+      </div>
+
+    
+      <div class="ba-tabs mb-5 rv">
+        <button class="ba-tab active" data-ba="implant">Dental Implants</button>
+        <button class="ba-tab" data-ba="veneer">Veneers</button>
+        <button class="ba-tab" data-ba="ortho">Orthodontics</button>
+        <button class="ba-tab" data-ba="whitening">Whitening</button>
+        <button class="ba-tab" data-ba="gum">Gum Correction</button>
+      </div>
+
+     
+      <div class="row g-4 ba-grid">
+
+        
+        <div class="col-md-6 col-xl-4 ba-item rv d1" data-ba-cat="implant">
+          <div class="ba-card">
+            <div class="ba-label-top">Dental Implant — Single Tooth</div>
+            <img-comparison-slider class="ba-slider">
+              <img slot="first" src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&q=80&auto=format&fit=crop" alt="Before — missing tooth" />
+              <img slot="second" src="https://images.unsplash.com/photo-1581594549595-35f6edc7b762?w=600&q=80&auto=format&fit=crop" alt="After — implant placed" />
+              <div slot="handle" class="ba-handle"><i class="fas fa-arrows-alt-h"></i></div>
+            </img-comparison-slider>
+            <div class="ba-card-foot">
+              <span class="ba-badge"><i class="fas fa-tooth"></i>Implant</span>
+              <span class="ba-duration">Treatment: 3 months</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4 ba-item rv d2" data-ba-cat="implant">
+          <div class="ba-card">
+            <div class="ba-label-top">All-on-4 Full Arch Restoration</div>
+            <img-comparison-slider class="ba-slider">
+              <img slot="first" src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80&auto=format&fit=crop" alt="Before — missing teeth" />
+              <img slot="second" src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&q=80&auto=format&fit=crop" alt="After — full arch" />
+              <div slot="handle" class="ba-handle"><i class="fas fa-arrows-alt-h"></i></div>
+            </img-comparison-slider>
+            <div class="ba-card-foot">
+              <span class="ba-badge"><i class="fas fa-tooth"></i>All-on-4</span>
+              <span class="ba-duration">Treatment: 5 months</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4 ba-item rv d3" data-ba-cat="implant">
+          <div class="ba-card">
+            <div class="ba-label-top">Multiple Implants — Posterior</div>
+            <img-comparison-slider class="ba-slider">
+              <img slot="first" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&q=80&auto=format&fit=crop" alt="Before" />
+              <img slot="second" src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80&auto=format&fit=crop" alt="After" />
+              <div slot="handle" class="ba-handle"><i class="fas fa-arrows-alt-h"></i></div>
+            </img-comparison-slider>
+            <div class="ba-card-foot">
+              <span class="ba-badge"><i class="fas fa-tooth"></i>Implants</span>
+              <span class="ba-duration">Treatment: 4 months</span>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="col-md-6 col-xl-4 ba-item rv d1" data-ba-cat="veneer" style="display:none">
+          <div class="ba-card">
+            <div class="ba-label-top">Porcelain Veneers — Smile Makeover</div>
+            <img-comparison-slider class="ba-slider">
+              <img slot="first" src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&q=80&auto=format&fit=crop" alt="Before veneers" />
+              <img slot="second" src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&q=80&auto=format&fit=crop" alt="After veneers" />
+              <div slot="handle" class="ba-handle"><i class="fas fa-arrows-alt-h"></i></div>
+            </img-comparison-slider>
+            <div class="ba-card-foot">
+              <span class="ba-badge ba-badge-aes"><i class="fas fa-star"></i>Veneers</span>
+              <span class="ba-duration">Treatment: 2 weeks</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4 ba-item rv d2" data-ba-cat="veneer" style="display:none">
+          <div class="ba-card">
+            <div class="ba-label-top">Composite Veneers — Chipped Teeth</div>
+            <img-comparison-slider class="ba-slider">
+              <img slot="first" src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80&auto=format&fit=crop" alt="Before" />
+              <img slot="second" src="https://images.unsplash.com/photo-1581594549595-35f6edc7b762?w=600&q=80&auto=format&fit=crop" alt="After" />
+              <div slot="handle" class="ba-handle"><i class="fas fa-arrows-alt-h"></i></div>
+            </img-comparison-slider>
+            <div class="ba-card-foot">
+              <span class="ba-badge ba-badge-aes"><i class="fas fa-star"></i>Veneers</span>
+              <span class="ba-duration">Treatment: 1 day</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4 ba-item rv d3" data-ba-cat="veneer" style="display:none">
+          <div class="ba-card">
+            <div class="ba-label-top">Full Smile Design — 10 Veneers</div>
+            <img-comparison-slider class="ba-slider">
+              <img slot="first" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&q=80&auto=format&fit=crop" alt="Before" />
+              <img slot="second" src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80&auto=format&fit=crop" alt="After" />
+              <div slot="handle" class="ba-handle"><i class="fas fa-arrows-alt-h"></i></div>
+            </img-comparison-slider>
+            <div class="ba-card-foot">
+              <span class="ba-badge ba-badge-aes"><i class="fas fa-star"></i>Smile Design</span>
+              <span class="ba-duration">Treatment: 3 weeks</span>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="col-md-6 col-xl-4 ba-item rv d1" data-ba-cat="ortho" style="display:none">
+          <div class="ba-card">
+            <div class="ba-label-top">Clear Aligners — Crowding</div>
+            <img-comparison-slider class="ba-slider">
+              <img slot="first" src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&q=80&auto=format&fit=crop" alt="Before aligners" />
+              <img slot="second" src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&q=80&auto=format&fit=crop" alt="After aligners" />
+              <div slot="handle" class="ba-handle"><i class="fas fa-arrows-alt-h"></i></div>
+            </img-comparison-slider>
+            <div class="ba-card-foot">
+              <span class="ba-badge ba-badge-ortho"><i class="fas fa-smile"></i>Aligners</span>
+              <span class="ba-duration">Treatment: 12 months</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4 ba-item rv d2" data-ba-cat="ortho" style="display:none">
+          <div class="ba-card">
+            <div class="ba-label-top">Metal Braces — Overbite Correction</div>
+            <img-comparison-slider class="ba-slider">
+              <img slot="first" src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80&auto=format&fit=crop" alt="Before braces" />
+              <img slot="second" src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80&auto=format&fit=crop" alt="After braces" />
+              <div slot="handle" class="ba-handle"><i class="fas fa-arrows-alt-h"></i></div>
+            </img-comparison-slider>
+            <div class="ba-card-foot">
+              <span class="ba-badge ba-badge-ortho"><i class="fas fa-smile"></i>Braces</span>
+              <span class="ba-duration">Treatment: 18 months</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4 ba-item rv d3" data-ba-cat="ortho" style="display:none">
+          <div class="ba-card">
+            <div class="ba-label-top">Lingual Braces — Spacing</div>
+            <img-comparison-slider class="ba-slider">
+              <img slot="first" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&q=80&auto=format&fit=crop" alt="Before" />
+              <img slot="second" src="https://images.unsplash.com/photo-1581594549595-35f6edc7b762?w=600&q=80&auto=format&fit=crop" alt="After" />
+              <div slot="handle" class="ba-handle"><i class="fas fa-arrows-alt-h"></i></div>
+            </img-comparison-slider>
+            <div class="ba-card-foot">
+              <span class="ba-badge ba-badge-ortho"><i class="fas fa-smile"></i>Lingual Braces</span>
+              <span class="ba-duration">Treatment: 14 months</span>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="col-md-6 col-xl-4 ba-item rv d1" data-ba-cat="whitening" style="display:none">
+          <div class="ba-card">
+            <div class="ba-label-top">In-Chair Whitening — 2 Shades Up</div>
+            <img-comparison-slider class="ba-slider">
+              <img slot="first" src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&q=80&auto=format&fit=crop" alt="Before whitening" />
+              <img slot="second" src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&q=80&auto=format&fit=crop" alt="After whitening" />
+              <div slot="handle" class="ba-handle"><i class="fas fa-arrows-alt-h"></i></div>
+            </img-comparison-slider>
+            <div class="ba-card-foot">
+              <span class="ba-badge ba-badge-aes"><i class="fas fa-sun"></i>Whitening</span>
+              <span class="ba-duration">Treatment: 1 session</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4 ba-item rv d2" data-ba-cat="whitening" style="display:none">
+          <div class="ba-card">
+            <div class="ba-label-top">Take-Home Whitening Kit — 4 Shades</div>
+            <img-comparison-slider class="ba-slider">
+              <img slot="first" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&q=80&auto=format&fit=crop" alt="Before" />
+              <img slot="second" src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80&auto=format&fit=crop" alt="After" />
+              <div slot="handle" class="ba-handle"><i class="fas fa-arrows-alt-h"></i></div>
+            </img-comparison-slider>
+            <div class="ba-card-foot">
+              <span class="ba-badge ba-badge-aes"><i class="fas fa-sun"></i>Whitening</span>
+              <span class="ba-duration">Treatment: 2 weeks</span>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="col-md-6 col-xl-4 ba-item rv d1" data-ba-cat="gum" style="display:none">
+          <div class="ba-card">
+            <div class="ba-label-top">Gum Contouring — Gummy Smile</div>
+            <img-comparison-slider class="ba-slider">
+              <img slot="first" src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=600&q=80&auto=format&fit=crop" alt="Before gum contouring" />
+              <img slot="second" src="https://images.unsplash.com/photo-1581594549595-35f6edc7b762?w=600&q=80&auto=format&fit=crop" alt="After gum contouring" />
+              <div slot="handle" class="ba-handle"><i class="fas fa-arrows-alt-h"></i></div>
+            </img-comparison-slider>
+            <div class="ba-card-foot">
+              <span class="ba-badge ba-badge-perio"><i class="fas fa-leaf"></i>Gum Contouring</span>
+              <span class="ba-duration">Treatment: 1 session</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xl-4 ba-item rv d2" data-ba-cat="gum" style="display:none">
+          <div class="ba-card">
+            <div class="ba-label-top">Crown Lengthening — Short Teeth</div>
+            <img-comparison-slider class="ba-slider">
+              <img slot="first" src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&q=80&auto=format&fit=crop" alt="Before" />
+              <img slot="second" src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=600&q=80&auto=format&fit=crop" alt="After" />
+              <div slot="handle" class="ba-handle"><i class="fas fa-arrows-alt-h"></i></div>
+            </img-comparison-slider>
+            <div class="ba-card-foot">
+              <span class="ba-badge ba-badge-perio"><i class="fas fa-leaf"></i>Crown Lengthening</span>
+              <span class="ba-duration">Treatment: 1 session</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      
+      <div class="text-center mt-5 rv">
+        <a href="case-studies.html" class="btn-gold"><i class="fas fa-images"></i>View All Case Studies</a>
+      </div>
+
+    </div>
+  </section> -->
+
+  <!-- ═══ BLOG ═══ -->
+  <section id="blog">
+    <div class="container">
+      <div class="row align-items-end mb-5 rv">
+        <div class="col-lg-7"><span class="tag">Latest News &amp; Articles</span>
+          <h2 class="section-title">Dental Guides &amp; Insights</h2>
+          <p class="lead-text">Expert advice from our specialists to help you care for your smile between visits.</p>
+        </div>
+        <div class="col-lg-5 text-lg-end mt-3 mt-lg-0"><a href="#" class="btn-outline">View All Articles</a></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 rv d1">
+          <div class="bl-card">
+            <div class="bl-img"><img
+                src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&q=80&auto=format&fit=crop"
+                alt="Dental Implants" loading="lazy" /><span class="bl-cat">Implants</span></div>
+            <div class="bl-body">
+              <div class="bl-meta"><i class="fas fa-calendar"></i>March 2025 · 5 min</div><a href="#"
+                class="bl-ttl">Everything to Know Before Getting Dental Implants</a>
+              <p class="bl-exc">A complete guide — candidacy, timeline, recovery and long-term care.</p><a href="#"
+                class="bl-lnk">Read more <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 rv d2">
+          <div class="bl-card">
+            <div class="bl-img"><img
+                src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=600&q=80&auto=format&fit=crop"
+                alt="Orthodontics" loading="lazy" /><span class="bl-cat">Orthodontics</span></div>
+            <div class="bl-body">
+              <div class="bl-meta"><i class="fas fa-calendar"></i>February 2025 · 4 min</div><a href="#"
+                class="bl-ttl">Clear Aligners vs Braces: Which Is Right for You?</a>
+              <p class="bl-exc">Pros, cons, cost and clinical suitability of each option for all ages.</p><a href="#"
+                class="bl-lnk">Read more <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 rv d3">
+          <div class="bl-card">
+            <div class="bl-img"><img
+                src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=600&q=80&auto=format&fit=crop"
+                alt="Aesthetic Dentistry" loading="lazy" /><span class="bl-cat">Aesthetics</span></div>
+            <div class="bl-body">
+              <div class="bl-meta"><i class="fas fa-calendar"></i>January 2025 · 6 min</div><a href="#"
+                class="bl-ttl">The Complete Guide to Smile Makeovers &amp; DSD</a>
+              <p class="bl-exc">From single veneers to full Hollywood designs — realistic outcomes explained.</p><a
+                href="#" class="bl-lnk">Read more <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 rv d4">
+          <div class="bl-card">
+            <div class="bl-img"><img
+                src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=600&q=80&auto=format&fit=crop"
+                alt="Periodontics" loading="lazy" /><span class="bl-cat">Periodontics</span></div>
+            <div class="bl-body">
+              <div class="bl-meta"><i class="fas fa-calendar"></i>December 2024 · 4 min</div><a href="#"
+                class="bl-ttl">Why Gum Health Is the Foundation of Overall Health</a>
+              <p class="bl-exc">The link between gum disease, heart health and diabetes — and laser therapy.</p><a
+                href="#" class="bl-lnk">Read more <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section id="contact">
+    <div class="container">
+      <div class="text-center mb-5 rv"><span class="tag">Get In Touch</span>
+        <h2 class="section-title">Visit Tharish Dental Clinic</h2>
+        <p class="lead-text mx-auto" style="max-width:450px">We're just a call or click away — our front desk team is
+          always happy to assist.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-5 rl">
+          <div class="ct-card">
+            <div class="ct-ic"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="ct-lbl">Location</div>
+              <div class="ct-val">123, Dental Plaza, Main Street<br>Thailand, – 600001</div>
+            </div>
+          </div>
+          <div class="ct-card">
+            <div class="ct-ic"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="ct-lbl">Phone</div>
+              <div class="ct-val">+91 98765 43210<br><span style="font-size:.8rem;color:var(--muted)">Emergency: +91
+                  98765 43211</span></div>
+            </div>
+          </div>
+          <div class="ct-card">
+            <div class="ct-ic"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="ct-lbl">Email</div>
+              <div class="ct-val">info@tharishdental.com</div>
+            </div>
+          </div>
+          <div class="ct-card">
+            <div class="ct-ic"><i class="fas fa-clock"></i></div>
+            <div>
+              <div class="ct-lbl">Hours</div>
+              <div class="ct-val">Mon–Sat: 9:00 AM – 7:00 PM<br>Sunday: 10:00 AM – 2:00 PM</div>
+            </div>
+          </div>
+          <div class="d-flex gap-3 mt-2 flex-wrap">
+            <a href="tel:+919876543210" class="btn-gold"><i class="fas fa-phone"></i>Call Now</a>
+            <a href="#" class="btn-outline" style="background:#25D366;border-color:#25D366;color:#fff"
+              onmouseover="this.style.background='#1da851'" onmouseout="this.style.background='#25D366'"><i
+                class="fab fa-whatsapp"></i>WhatsApp</a>
+          </div>
+        </div>
+        <div class="col-lg-7 rr">
+          <div class="map-box"><i class="fas fa-map-marked-alt"></i><span>Tharish Dental Clinic — Thailand</span><span
+              style="font-size:.73rem;color:rgba(201,162,39,.55)">Interactive map integration available</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <svg viewBox="0 0 580 150" xmlns="http://www.w3.org/2000/svg" class="f-logo">
+            <defs>
+              <linearGradient id="fG" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#9A7A1A" />
+                <stop offset="50%" stop-color="#C9A227" />
+                <stop offset="100%" stop-color="#9A7A1A" />
+              </linearGradient>
+            </defs>
+            <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-family="DM Serif Display,serif"
+              font-size="96" fill="url(#fG)">THARISH</text>
+            <text x="50%" y="88%" dominant-baseline="middle" text-anchor="middle"
+              font-family="Plus Jakarta Sans,sans-serif" font-size="15" font-weight="600" letter-spacing="9"
+              fill="#9A7A1A">DENTAL CLINIC</text>
+          </svg>
+          <p class="f-tag">Where precision meets elegance. World-class dental care with a personal touch since 2009.</p>
+          <div class="f-soc">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="f-hd">Services</div>
+          <ul class="f-links">
+            <li><a href="#treatments"><i class="fas fa-circle"></i>Aesthetic Dentistry</a></li>
+            <li><a href="dental-implants.html"><i class="fas fa-circle"></i>Dental Implants</a></li>
+            <li><a href="#treatments"><i class="fas fa-circle"></i>Endodontics</a></li>
+            <li><a href="#treatments"><i class="fas fa-circle"></i>General Dentistry</a></li>
+            <li><a href="#treatments"><i class="fas fa-circle"></i>Occlusion Dentistry</a></li>
+            <li><a href="#treatments"><i class="fas fa-circle"></i>Oral Surgery</a></li>
+            <li><a href="#treatments"><i class="fas fa-circle"></i>Orthodontics</a></li>
+            <li><a href="#treatments"><i class="fas fa-circle"></i>Pediatric Dentistry</a></li>
+            <li><a href="#treatments"><i class="fas fa-circle"></i>Periodontics</a></li>
+            <li><a href="#treatments"><i class="fas fa-circle"></i>Prosthodontics</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="f-hd">Help &amp; Support</div>
+          <ul class="f-links">
+            <li><a href="about.html"><i class="fas fa-circle"></i>About Us</a></li>
+            <li><a href="team.html"><i class="fas fa-circle"></i>Our Doctors</a></li>
+            <li><a href="#equipment"><i class="fas fa-circle"></i>Technology</a></li>
+            <li><a href="#appointment"><i class="fas fa-circle"></i>Appointment</a></li>
+            <li><a href="#blog"><i class="fas fa-circle"></i>Blog &amp; Guides</a></li>
+            <li><a href="#contact"><i class="fas fa-circle"></i>Contact Us</a></li>
+            <li><a href="#"><i class="fas fa-circle"></i>Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="f-hd">Contact</div>
+          <ul class="f-links">
+            <li><a href="#"><i class="fas fa-circle"></i>+91 98765 43210</a></li>
+            <li><a href="#"><i class="fas fa-circle"></i>info@tharishdental.com</a></li>
+            <li><a href="#"><i class="fas fa-circle"></i>Thailand</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="f-hd">Working Hours</div>
+          <div class="f-hr-row"><span class="f-hr-day">Monday – Friday</span><span>9am – 7pm</span></div>
+          <div class="f-hr-row"><span class="f-hr-day">Saturday</span><span>9am – 6pm</span></div>
+          <div class="f-hr-row"><span class="f-hr-day">Sunday</span><span>10am – 2pm</span></div>
+          <div style="margin-top:1.3rem"><a href="#appointment" class="btn-gold"
+              style="font-size:.74rem;padding:.68rem 1.45rem"><i class="fas fa-calendar-check"></i>Book Now</a></div>
+        </div>
+      </div>
+      <!-- Accreditations & Certifications -->
+      <div class="f-accred-row">
+        <div class="f-accred-lbl">Accreditations &amp; Certifications</div>
+        <div class="f-accred-logos">
+          <div class="f-accred-badge">
+            <i class="fas fa-certificate"></i>
+            <span>ISO 13485</span>
+          </div>
+          <div class="f-accred-badge f-accred-badge--dbd">
+            <span class="f-accred-dbd-txt">DBD</span>
+            <span>Registered Business</span>
+          </div>
+          <div class="f-accred-badge">
+            <i class="fas fa-shield-alt"></i>
+            <span>ISO 9001</span>
+          </div>
+          <div class="f-accred-badge">
+            <i class="fas fa-award"></i>
+            <span>Best Dental Clinic</span>
+          </div>
+          <div class="f-accred-badge">
+            <i class="fas fa-star"></i>
+            <span>4.9★ Google Rating</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="f-bot"><span>© 2026 Tharish Dental Clinic. All Rights Reserved.</span>
+        <div class="d-flex gap-3 flex-wrap"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a
+            href="#">Sitemap</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#hero" id="btt"><i class="fas fa-chevron-up"></i></a>
+
+  <!-- ═══ COOKIE CONSENT BANNER ═══ -->
+  <div id="cookieBanner" class="cookie-banner" role="alert" aria-live="polite">
+    <div class="container">
+      <div class="cookie-inner">
+        <div class="cookie-text">
+          <i class="fas fa-cookie-bite"></i>
+          <span>We use cookies to enhance your browsing experience, analyse site traffic, and personalise content. By
+            clicking <strong>Accept All</strong>, you consent to our use of cookies. <a href="#">Learn more</a></span>
+        </div>
+        <div class="cookie-actions">
+          <button class="cookie-btn-outline" id="cookieDecline">Essential Only</button>
+          <button class="cookie-btn-gold" id="cookieAccept">Accept All</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4/dist/scrollreveal.min.js"></script>
+  <script type="module" src="https://unpkg.com/img-comparison-slider@8/dist/index.js"></script>
+  <script src="assets/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- <script src="assets/protect.js"></script> -->
+  <title>Equipment Showroom — Tharish Dental Clinic</title>
+  <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="assets/equipment.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div id="topbar">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex gap-4 flex-wrap">
+          <span class="info"><i class="fas fa-phone"></i>+91 98765 43210</span>
+          <span class="info d-none d-md-flex"><i class="fas fa-clock"></i>Mon–Sat: 9AM–7PM &nbsp;|&nbsp; Sun: 10AM–2PM</span>
+          <span class="info d-none d-lg-flex"><i class="fas fa-map-marker-alt"></i>Thailand</span>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <div class="lang-toggle" id="langToggle" role="group" aria-label="Language">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="th">TH</button>
+          </div>
+          <div class="socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo.png" alt="Tharish Dental Clinic Logo" height="42" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navM"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse justify-content-end" id="navM">
+        <ul class="navbar-nav align-items-center gap-1 ms-4">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <!-- CASE STUDIES DROPDOWN -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="caseDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Case Studies <i class="fas fa-chevron-down treat-arrow"></i>
+            </a>
+            <ul class="dropdown-menu treat-drop shadow" aria-labelledby="caseDrop">
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-tooth"></i>Implant Cases</a></li>
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-smile"></i>Orthodontic Cases</a></li>
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-star"></i>Aesthetic Cases</a></li>
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-crown"></i>Full Mouth Rehab</a></li>
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-child"></i>Pediatric Cases</a></li>
+            </ul>
+          </li>
+          <!-- TREATMENTS DROPDOWN -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="treatDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Treatments <i class="fas fa-chevron-down treat-arrow"></i>
+            </a>
+            <ul class="dropdown-menu treat-drop shadow" aria-labelledby="treatDrop">
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="dental-implants.html"><i class="fas fa-tooth"></i>Dental Implants<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="dental-implants.html?tab=single">Single Implants</a></li>
+                  <li><a class="dropdown-item" href="dental-implants.html?tab=multiple">Multiple Implants</a></li>
+                  <li><a class="dropdown-item" href="dental-implants.html?tab=allon4">All-on-4 Implants</a></li>
+                  <li><a class="dropdown-item" href="dental-implants.html?tab=mini">Mini Implants</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-smile"></i>Orthodontic Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Metal Braces</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Clear Aligners</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Lingual Braces</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Retainers</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-star"></i>Aesthetic Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Teeth Whitening</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Porcelain Veneers</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Dental Bonding</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Smile Makeover</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-leaf"></i>Periodontic Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Gum Disease Treatment</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Scaling &amp; Root Planing</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Gum Surgery</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Bone Grafting</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-crown"></i>Prosthodontic Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Dental Crowns</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Bridges</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Dentures</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Inlays &amp; Onlays</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-syringe"></i>Endodontic Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Root Canal Treatment</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Retreatment</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Pulp Capping</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Apicoectomy</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-child"></i>Pediatric Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Baby Teeth Care</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Fluoride Treatment</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Dental Sealants</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Space Maintainers</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-shield-alt"></i>Occlusion Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Bite Correction</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Night Guards</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">TMJ Treatment</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Occlusal Splints</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-teeth-open"></i>Oral Surgery<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Tooth Extraction</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Wisdom Teeth Removal</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Bone Grafting</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Jaw Surgery</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-check-double"></i>General Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Cleaning &amp; Scaling</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Dental Fillings</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">X-Rays &amp; Diagnosis</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Preventive Care</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="team.html">Doctors</a></li>
+          <!-- TECHNOLOGY DROPDOWN -->
+          <li class="nav-item dropdown">
+            <a class="nav-link active" href="#" id="techDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Technology <i class="fas fa-chevron-down treat-arrow"></i>
+            </a>
+            <ul class="dropdown-menu treat-drop shadow" aria-labelledby="techDrop">
+              <li><a class="dropdown-item" href="sterilization.html"><i class="fas fa-shield-virus"></i>Sterilization &amp; Quality</a></li>
+              <li><a class="dropdown-item" href="equipment-showroom.html"><i class="fas fa-microscope"></i>Equipment Showroom</a></li>
+              <li><a class="dropdown-item" href="complication-policy.html"><i class="fas fa-handshake"></i>Complication Policy</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-2"><a class="nav-link nav-cta" href="index.html#appointment">Book Now</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="eq-page-hero">
+    <div class="eq-ph-bg" style="background-image:url('https://images.unsplash.com/photo-1666214280391-8ff5bd3c0bf0?w=1600&q=80&auto=format&fit=crop')"></div>
+    <div class="eq-ph-overlay"></div>
+    <div class="container eq-ph-inner">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <span class="tag mb-3"><i class="fas fa-microscope"></i>Equipment Showroom</span>
+          <h1 class="section-title text-white mb-3">Precision Tools for<br><span style="color:var(--gold-lt)">Exceptional Care</span></h1>
+          <p class="lead-text text-white" style="opacity:.85;max-width:580px;">We invest in the most advanced clinical technology available — not for show, but because every millimetre of precision translates directly into your comfort, safety, and outcome.</p>
+          <div class="d-flex gap-3 flex-wrap mt-4">
+            <a href="sterilization.html" class="btn-white"><i class="fas fa-shield-virus"></i>Sterilization Dashboard</a>
+            <a href="complication-policy.html" class="btn-white"><i class="fas fa-handshake"></i>Complication Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAT STRIP -->
+  <section style="background:var(--dark);padding:2.2rem 0;">
+    <div class="container">
+      <div class="row g-3 text-center">
+        <div class="col-6 col-md-3">
+          <div class="s-chip" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1);">
+            <div class="s-chip-n">14+</div>
+            <div class="s-chip-l" style="color:rgba(255,255,255,.55);">Major Equipment</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="s-chip" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1);">
+            <div class="s-chip-n">8</div>
+            <div class="s-chip-l" style="color:rgba(255,255,255,.55);">Global Brands</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="s-chip" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1);">
+            <div class="s-chip-n">ISO</div>
+            <div class="s-chip-l" style="color:rgba(255,255,255,.55);">Certified Equipment</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="s-chip" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1);">
+            <div class="s-chip-n">100%</div>
+            <div class="s-chip-l" style="color:rgba(255,255,255,.55);">Digital Workflow</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPMENT GRID — IMAGING & DIAGNOSTICS -->
+  <section class="eq-section">
+    <div class="container">
+      <div class="text-center mb-5 ">
+        <span class="tag mb-2"><i class="fas fa-x-ray"></i>Imaging &amp; Diagnostics</span>
+        <h2 class="section-title">See What Others Miss</h2>
+        <p class="lead-text mx-auto" style="max-width:540px;">Sub-millimetre imaging and real-time digital diagnostics let our clinicians plan every procedure with complete confidence.</p>
+      </div>
+      <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-md-6 col-xl-4  d1">
+          <div class="eq-show-card">
+            <div class="eq-show-img">
+              <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&q=80&auto=format&fit=crop" alt="CBCT Scanner" />
+              <span class="eq-show-tag">3D Imaging</span>
+            </div>
+            <div class="eq-show-body">
+              <div class="eq-show-brand">Planmeca · Finland</div>
+              <div class="eq-show-name">ProMax 3D Mid CBCT</div>
+              <p class="eq-show-desc">Cone Beam CT delivering 3D jaw, sinus, and nee mapping at ultra-low radiation doses. Essential for implant planning, wisdom tooth removal, and airway assessment.</p>
+              <div class="eq-show-badges">
+                <span class="eq-sbadge"><i class="fas fa-check"></i>3D Volume</span>
+                <span class="eq-sbadge"><i class="fas fa-check"></i>Low Dose</span>
+                <span class="eq-sbadge"><i class="fas fa-check"></i>CE &amp; FDA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-6 col-xl-4  d2">
+          <div class="eq-show-card">
+            <div class="eq-show-img">
+              <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80&auto=format&fit=crop" alt="Digital X-Ray" />
+              <span class="eq-show-tag">Digital X-Ray</span>
+            </div>
+            <div class="eq-show-body">
+              <div class="eq-show-brand">Dentsply Sirona · Germany</div>
+              <div class="eq-show-name">ORTHOPHOS SL 3D OPG</div>
+              <p class="eq-show-desc">Full panoramic and cephalometric imaging with instant digital capture. Reduces radiation by up to 80% versus conventional film, with crystal-clear detail for every exam.</p>
+              <div class="eq-show-badges">
+                <span class="eq-sbadge"><i class="fas fa-check"></i>Panoramic</span>
+                <span class="eq-sbadge"><i class="fas fa-check"></i>Cephalometric</span>
+                <span class="eq-sbadge"><i class="fas fa-check"></i>80% Less Radiation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-6 col-xl-4  d3">
+          <div class="eq-show-card">
+            <div class="eq-show-img">
+              <img src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=600&q=80&auto=format&fit=crop" alt="Intraoral Scanner" />
+              <span class="eq-show-tag">Digital Impressions</span>
+            </div>
+            <div class="eq-show-body">
+              <div class="eq-show-brand">3Shape · Denmark</div>
+              <div class="eq-show-name">TRIOS 5 Wireless Intraoral Scanner</div>
+              <p class="eq-show-desc">Captures full-arch digital impressions in under 60 seconds — no trays, no putty, no mess. Streams directly to our CAD/CAM mill for same-day restorations.</p>
+              <div class="eq-show-badges">
+                <span class="eq-sbadge"><i class="fas fa-check"></i>Wireless</span>
+                <span class="eq-sbadge"><i class="fas fa-check"></i>Colour Scan</span>
+                <span class="eq-sbadge"><i class="fas fa-check"></i>AI-Assisted</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPMENT GRID — RESTORATIVE & CAD/CAM -->
+  <section class="eq-section" style="background:var(--off2);padding-top:40px;">
+    <div class="container">
+      <div class="text-center mb-5 ">
+        <span class="tag mb-2"><i class="fas fa-drafting-compass"></i>Restorative &amp; CAD/CAM</span>
+        <h2 class="section-title">Same-Day Restorations</h2>
+        <p class="lead-text mx-auto" style="max-width:540px;">From scan to crown in a single appointment. Our CAD/CAM suite eliminates temporary restorations and lab waiting times.</p>
+      </div>
+      <div class="row g-4">
+
+        <!-- Card 4 -->
+        <div class="col-md-6 col-xl-4  d1">
+          <div class="eq-show-card">
+            <div class="eq-show-img">
+              <img src="https://images.pexels.com/photos/6627663/pexels-photo-6627663.jpeg?auto=compress&cs=tinysrgb&w=600&fit=max" alt="CAD CAM Mill" />
+              <span class="eq-show-tag">CAD/CAM Milling</span>
+            </div>
+            <div class="eq-show-body">
+              <div class="eq-show-brand">Dentsply Sirona · Germany</div>
+              <div class="eq-show-name">CEREC Primemill</div>
+              <p class="eq-show-desc">5-axis chairside milling unit that fabricates porcelain crowns, veneers, and inlays in approximately 15 minutes — all from a single block of clinical-grade ceramic.</p>
+              <div class="eq-show-badges">
+                <span class="eq-sbadge"><i class="fas fa-check"></i>5-Axis</span>
+                <span class="eq-sbadge"><i class="fas fa-check"></i>15-Min Crown</span>
+                <span class="eq-sbadge"><i class="fas fa-check"></i>Zirconia Ready</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-md-6 col-xl-4  d2">
+          <div class="eq-show-card">
+            <div class="eq-show-img">
+              <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=600&q=80&auto=format&fit=crop" alt="Digital Design Software" />
+              <span class="eq-show-tag">Digital Design</span>
+            </div>
+            <div class="eq-show-body">
+              <div class="eq-show-brand">Dentsply Sirona · Germany</div>
+              <div class="eq-show-name">CEREC Primescan CAD Software</div>
+              <p class="eq-show-desc">AI-powered design software that auto-generates anatomically accurate restorations from scan data — reviewed and refined by the clinician before milling.</p>
+              <div class="eq-show-badges">
+                <span class="eq-sbadge"><i class="fas fa-check"></i>AI Auto-Design</span>
+                <span class="eq-sbadge"><i class="fas fa-check"></i>Cloud Library</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-md-6 col-xl-4  d3">
+          <div class="eq-show-card">
+            <div class="eq-show-img">
+              <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600&q=80&auto=format&fit=crop" alt="Dental Laser" />
+              <span class="eq-show-tag">Soft Tissue Laser</span>
+            </div>
+            <div class="eq-show-body">
+              <div class="eq-show-brand">Biolase · USA</div>
+              <div class="eq-show-name">Waterlase iPlus 2.0</div>
+              <p class="eq-show-desc">Er,Cr:YSGG all-tissue laser. Cuts hard and soft tissue with minimal bleeding and dramatically reduced healing time — no drill noise, reduced anaesthesia requirement.</p>
+              <div class="eq-show-badges">
+                <span class="eq-sbadge"><i class="fas fa-check"></i>Hard &amp; Soft Tissue</span>
+                <span class="eq-sbadge"><i class="fas fa-check"></i>Less Anaesthesia</span>
+                <span class="eq-sbadge"><i class="fas fa-check"></i>FDA Cleared</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPMENT GRID — IMPLANTOLOGY -->
+  <section class="eq-section">
+    <div class="container">
+      <div class="text-center mb-5 ">
+        <span class="tag mb-2"><i class="fas fa-tooth"></i>Implantology</span>
+        <h2 class="section-title">Built for Implant Precision</h2>
+        <p class="lead-text mx-auto" style="max-width:540px;">Guided surgery, real-time torque monitoring, and surgical-grade illumination — every implant placed to within 0.1 mm of the digital plan.</p>
+      </div>
+      <div class="row g-4">
+
+        <!-- Card 7 -->
+        <div class="col-md-6 col-xl-4  d1">
+          <div class="eq-show-card">
+            <div class="eq-show-img">
+              <img src="https://images.unsplash.com/photo-1584362917165-526a968579e8?w=600&q=80&auto=format&fit=crop" alt="Surgical Guide" />
+              <span class="eq-show-tag">Guided Surgery</span>
+            </div>
+            <div class="eq-show-body">
+              <div class="eq-show-brand">Nobel Biocare · Switzerland</div>
+              <div class="eq-show-name">NobelGuide Surgical System</div>
+              <p class="eq-show-desc">3D-planned, guided implant placement using CBCT-derived surgical stents. Eliminates free-hand drilling — every implant positioned exactly as planned.</p>
+              <div class="eq-show-badges">
+                <span class="eq-sbadge"><i class="fas fa-check"></i>3D Planned</span>
+                <span class="eq-sbadge"><i class="fas fa-check"></i>Static Guide</span>
+                <span class="eq-sbadge"><i class="fas fa-check"></i>Flapless Option</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="col-md-6 col-xl-4  d2">
+          <div class="eq-show-card">
+            <div class="eq-show-img">
+              <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&q=80&auto=format&fit=crop" alt="Surgical Motor" />
+              <span class="eq-show-tag">Surgical Motor</span>
+            </div>
+            <div class="eq-show-body">
+              <div class="eq-show-brand">W&amp;H · Austria</div>
+              <div class="eq-show-name">Implantmed SI-915 Surgical Motor</div>
+              <p class="eq-show-desc">Wireless surgical motor with automatic torque control and real-time ISQ resonance frequency feedback for immediate implant stability measurement post-placement.</p>
+              <div class="eq-show-badges">
+                <span class="eq-sbadge"><i class="fas fa-check"></i>Auto Torque</span>
+                <span class="eq-sbadge"><i class="fas fa-check"></i>ISQ Feedback</span>
+                <span class="eq-sbadge"><i class="fas fa-check"></i>Wireless</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="col-md-6 col-xl-4  d3">
+          <div class="eq-show-card">
+            <div class="eq-show-img">
+              <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=600&q=80&auto=format&fit=crop" alt="Surgical Microscope" />
+              <span class="eq-show-tag">Magnification</span>
+            </div>
+            <div class="eq-show-body">
+              <div class="eq-show-brand">Carl Zeiss · Germany</div>
+              <div class="eq-show-name">OPMI PROergo Surgical Microscope</div>
+              <p class="eq-show-desc">Up to 25× magnification with coaxial xenon illumination for microsurgery, root canal treatment, and precision suturing in implant and periodontal procedures.</p>
+              <div class="eq-show-badges">
+                <span class="eq-sbadge"><i class="fas fa-check"></i>25× Magnification</span>
+                <span class="eq-sbadge"><i class="fas fa-check"></i>Xenon Light</span>
+                <span class="eq-sbadge"><i class="fas fa-check"></i>4K Video Camera</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPMENT GRID — STERILIZATION & ENVIRONMENT -->
+  <section class="eq-section" style="background:var(--off2);padding-top:40px;">
+    <div class="container">
+      <div class="text-center mb-5 ">
+        <span class="tag mb-2"><i class="fas fa-fire"></i>Sterilization &amp; Environment</span>
+        <h2 class="section-title">A Clinically Safe Space</h2>
+        <p class="lead-text mx-auto" style="max-width:540px;">Hospital-grade sterilization, surgical-quality air, and real-time environment monitoring keep every treatment room as safe as it is comfortable.</p>
+      </div>
+      <div class="row g-4">
+
+        <!-- Card 10 -->
+        <div class="col-md-6 col-xl-4  d1">
+          <div class="eq-show-card">
+            <div class="eq-show-img">
+              <img src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=600&q=80&auto=format&fit=crop" alt="Autoclave" />
+              <span class="eq-show-tag">Sterilization</span>
+            </div>
+            <div class="eq-show-body">
+              <div class="eq-show-brand">SciCan · Canada</div>
+              <div class="eq-show-name">STATIM 5000 G4 Autoclave</div>
+              <p class="eq-show-desc">Cassette-based Class B steam autoclave cycles in under 6 minutes. Each cycle is digitally logged, printed, and archived. BI tested weekly, spore test results displayed on our quality dashboard.</p>
+              <div class="eq-show-badges">
+                <span class="eq-sbadge"><i class="fas fa-check"></i>Class B</span>
+                <span class="eq-sbadge"><i class="fas fa-check"></i>6-Min Cycle</span>
+                <span class="eq-sbadge"><i class="fas fa-check"></i>Digital Log</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="col-md-6 col-xl-4  d2">
+          <div class="eq-show-card">
+            <div class="eq-show-img">
+              <img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?w=600&q=80&auto=format&fit=crop" alt="Air Purifier" />
+              <span class="eq-show-tag">Air Quality</span>
+            </div>
+            <div class="eq-show-body">
+              <div class="eq-show-brand">IQAir · Switzerland</div>
+              <div class="eq-show-name">GC MultiGas HEPA-14 Purifier</div>
+              <p class="eq-show-desc">Removes 99.995% of airborne particles, aerosols, and volatile compounds. Each treatment room runs a dedicated unit — exchanging air completely 6× per hour.</p>
+              <div class="eq-show-badges">
+                <span class="eq-sbadge"><i class="fas fa-check"></i>HEPA-14</span>
+                <span class="eq-sbadge"><i class="fas fa-check"></i>6× ACH</span>
+                <span class="eq-sbadge"><i class="fas fa-check"></i>Aerosol Capture</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="col-md-6 col-xl-4  d3">
+          <div class="eq-show-card">
+            <div class="eq-show-img">
+              <img src="https://images.unsplash.com/photo-1581595219315-a187dd40c322?w=600&q=80&auto=format&fit=crop" alt="Ultrasonic Cleaner" />
+              <span class="eq-show-tag">Pre-Sterilization</span>
+            </div>
+            <div class="eq-show-body">
+              <div class="eq-show-brand">Bandelin · Germany</div>
+              <div class="eq-show-name">Sonorex Digitec Ultrasonic Cleaner</div>
+              <p class="eq-show-desc">Every instrument passes through 15 minutes of ultrasonic cavitation before autoclave pouching — removing blood, cement, and biofilm from even the finest serrations.</p>
+              <div class="eq-show-badges">
+                <span class="eq-sbadge"><i class="fas fa-check"></i>35 kHz</span>
+                <span class="eq-sbadge"><i class="fas fa-check"></i>Digital Timer</span>
+                <span class="eq-sbadge"><i class="fas fa-check"></i>Heated Bath</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <svg viewBox="0 0 580 150" xmlns="http://www.w3.org/2000/svg" class="f-logo">
+            <defs>
+              <linearGradient id="fG" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#9A7A1A" />
+                <stop offset="50%" stop-color="#C9A227" />
+                <stop offset="100%" stop-color="#9A7A1A" />
+              </linearGradient>
+            </defs>
+            <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-family="DM Serif Display,serif" font-size="96" fill="url(#fG)">THARISH</text>
+            <text x="50%" y="88%" dominant-baseline="middle" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-size="15" font-weight="600" letter-spacing="9" fill="#9A7A1A">DENTAL CLINIC</text>
+          </svg>
+          <p class="f-tag">Where precision meets elegance. World-class dental care with a personal touch since 2009.</p>
+          <div class="f-soc">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="f-hd">Seices</div>
+          <ul class="f-links">
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Dental Implants</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Orthodontics</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Aesthetic Dentistry</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Periodontics</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Prosthodontics</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Pediatric Care</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Oral Surgery</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>General Dentistry</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="f-hd">Help &amp; Support</div>
+          <ul class="f-links">
+            <li><a href="about.html"><i class="fas fa-circle"></i>About Us</a></li>
+            <li><a href="team.html"><i class="fas fa-circle"></i>Our Doctors</a></li>
+            <li><a href="sterilization.html"><i class="fas fa-circle"></i>Sterilization</a></li>
+            <li><a href="equipment-showroom.html"><i class="fas fa-circle"></i>Equipment</a></li>
+            <li><a href="complication-policy.html"><i class="fas fa-circle"></i>Complication Policy</a></li>
+            <li><a href="index.html#appointment"><i class="fas fa-circle"></i>Appointment</a></li>
+            <li><a href="contact.html"><i class="fas fa-circle"></i>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="f-hd">Contact</div>
+          <ul class="f-links">
+            <li><a href="#"><i class="fas fa-circle"></i>+91 98765 43210</a></li>
+            <li><a href="#"><i class="fas fa-circle"></i>info@tharishdental.com</a></li>
+            <li><a href="#"><i class="fas fa-circle"></i>Thailand</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="f-hd">Working Hours</div>
+          <div class="f-hr-row"><span class="f-hr-day">Monday – Friday</span><span>9am – 7pm</span></div>
+          <div class="f-hr-row"><span class="f-hr-day">Saturday</span><span>9am – 6pm</span></div>
+          <div class="f-hr-row"><span class="f-hr-day">Sunday</span><span>10am – 2pm</span></div>
+          <div style="margin-top:1.3rem"><a href="index.html#appointment" class="btn-gold" style="font-size:.74rem;padding:.68rem 1.45rem"><i class="fas fa-calendar-check"></i>Book Now</a></div>
+        </div>
+      </div>
+      <div class="f-accred-row">
+        <div class="f-accred-lbl">Accreditations &amp; Certifications</div>
+        <div class="f-accred-logos">
+          <div class="f-accred-badge"><i class="fas fa-certificate"></i><span>ISO 13485</span></div>
+          <div class="f-accred-badge f-accred-badge--dbd"><span class="f-accred-dbd-txt">DBD</span><span>Registered Business</span></div>
+          <div class="f-accred-badge"><i class="fas fa-shield-alt"></i><span>ISO 9001</span></div>
+          <div class="f-accred-badge"><i class="fas fa-award"></i><span>Best Dental Clinic</span></div>
+          <div class="f-accred-badge"><i class="fas fa-star"></i><span>4.9★ Google Rating</span></div>
+        </div>
+      </div>
+      <div class="f-bot"><span>© 2026 Tharish Dental Clinic. All Rights Reseed.</span>
+        <div class="d-flex gap-3 flex-wrap"><a href="#">Privacy Policy</a><a href="#">Terms of Seice</a><a href="#">Sitemap</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="btt"><i class="fas fa-chevron-up"></i></a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="assets/page.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- <script src="assets/protect.js"></script> -->
+  <title>Sterilization &amp; Quality Dashboard — Tharish Dental Clinic</title>
+  <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="assets/equipment.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div id="topbar">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex gap-4 flex-wrap">
+          <span class="info"><i class="fas fa-phone"></i>+91 98765 43210</span>
+          <span class="info d-none d-md-flex"><i class="fas fa-clock"></i>Mon–Sat: 9AM–7PM &nbsp;|&nbsp; Sun: 10AM–2PM</span>
+          <span class="info d-none d-lg-flex"><i class="fas fa-map-marker-alt"></i>Thailand</span>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <div class="lang-toggle" id="langToggle" role="group" aria-label="Language">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="th">TH</button>
+          </div>
+          <div class="socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo.png" alt="Tharish Dental Clinic Logo" height="42" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navM"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse justify-content-end" id="navM">
+        <ul class="navbar-nav align-items-center gap-1 ms-4">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <!-- CASE STUDIES DROPDOWN -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="caseDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Case Studies <i class="fas fa-chevron-down treat-arrow"></i>
+            </a>
+            <ul class="dropdown-menu treat-drop shadow" aria-labelledby="caseDrop">
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-tooth"></i>Implant Cases</a></li>
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-smile"></i>Orthodontic Cases</a></li>
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-star"></i>Aesthetic Cases</a></li>
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-crown"></i>Full Mouth Rehab</a></li>
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-child"></i>Pediatric Cases</a></li>
+            </ul>
+          </li>
+          <!-- TREATMENTS DROPDOWN -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="treatDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Treatments <i class="fas fa-chevron-down treat-arrow"></i>
+            </a>
+            <ul class="dropdown-menu treat-drop shadow" aria-labelledby="treatDrop">
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-tooth"></i>Dental Implants<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Single Implants</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Multiple Implants</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">All-on-4 Implants</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Mini Implants</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-smile"></i>Orthodontic Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Metal Braces</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Clear Aligners</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Lingual Braces</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Retainers</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-star"></i>Aesthetic Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Teeth Whitening</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Porcelain Veneers</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Dental Bonding</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Smile Makeover</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-leaf"></i>Periodontic Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Gum Disease Treatment</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Scaling &amp; Root Planing</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Gum Surgery</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Bone Grafting</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-crown"></i>Prosthodontic Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Dental Crowns</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Bridges</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Dentures</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Inlays &amp; Onlays</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-syringe"></i>Endodontic Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Root Canal Treatment</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Retreatment</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Pulp Capping</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Apicoectomy</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-child"></i>Pediatric Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Baby Teeth Care</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Fluoride Treatment</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Dental Sealants</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Space Maintainers</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-shield-alt"></i>Occlusion Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Bite Correction</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Night Guards</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">TMJ Treatment</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Occlusal Splints</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-teeth-open"></i>Oral Surgery<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Tooth Extraction</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Wisdom Teeth Removal</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Bone Grafting</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Jaw Surgery</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-check-double"></i>General Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Cleaning &amp; Scaling</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Dental Fillings</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">X-Rays &amp; Diagnosis</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Preventive Care</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="team.html">Doctors</a></li>
+          <!-- TECHNOLOGY DROPDOWN -->
+          <li class="nav-item dropdown">
+            <a class="nav-link active" href="#" id="techDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Technology <i class="fas fa-chevron-down treat-arrow"></i>
+            </a>
+            <ul class="dropdown-menu treat-drop shadow" aria-labelledby="techDrop">
+              <li><a class="dropdown-item" href="sterilization.html"><i class="fas fa-shield-virus"></i>Sterilization &amp; Quality</a></li>
+              <li><a class="dropdown-item" href="equipment-showroom.html"><i class="fas fa-microscope"></i>Equipment Showroom</a></li>
+              <li><a class="dropdown-item" href="complication-policy.html"><i class="fas fa-handshake"></i>Complication Policy</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-2"><a class="nav-link nav-cta" href="index.html#appointment">Book Now</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="eq-page-hero">
+    <div class="eq-ph-bg" style="background-image:url('https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=1600&q=80&auto=format&fit=crop')"></div>
+    <div class="eq-ph-overlay"></div>
+    <div class="container eq-ph-inner">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <span class="tag mb-3"><i class="fas fa-shield-virus"></i>Sterilization &amp; Quality</span>
+          <h1 class="section-title text-white mb-3">Our Commitment to<br><span style="color:var(--gold-lt)">Clinical Safety</span></h1>
+          <p class="lead-text text-white" style="opacity:.85;max-width:580px;">Every instrument, every surface, every cycle — tracked, tested, and logged. This live dashboard reflects the real-time status of our sterilization and infection control systems.</p>
+          <div class="d-flex gap-3 flex-wrap mt-4">
+            <a href="equipment-showroom.html" class="btn-white"><i class="fas fa-microscope"></i>Equipment Showroom</a>
+            <a href="complication-policy.html" class="btn-white"><i class="fas fa-handshake"></i>Complication Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAT CARDS -->
+  <section class="eq-section" style="background:var(--off2);padding-bottom:40px;">
+    <div class="container">
+      <div class="text-center mb-5 ">
+        <span class="tag mb-2"><i class="fas fa-chart-line"></i>Live Status</span>
+        <h2 class="section-title">Quality at a Glance</h2>
+        <p class="lead-text mx-auto" style="max-width:540px;">Updated weekly by our sterilization officer. All indicators are reviewed and signed off by our head clinician.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-xl-3  d1">
+          <div class="dash-stat-card">
+            <div class="dsc-icon"><i class="fas fa-vial"></i></div>
+            <div class="dsc-body">
+              <div class="dsc-lbl">Last Autoclave BI Test</div>
+              <div class="dsc-val">7 April 2026</div>
+              <span class="dsc-badge pass">PASS — Negative Growth</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3  d2">
+          <div class="dash-stat-card">
+            <div class="dsc-icon"><i class="fas fa-tint"></i></div>
+            <div class="dsc-body">
+              <div class="dsc-lbl">Waterline Maintenance</div>
+              <div class="dsc-val">4 April 2026</div>
+              <span class="dsc-badge pass">PASS — Within &lt;500 CFU/mL</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3  d3">
+          <div class="dash-stat-card">
+            <div class="dsc-icon"><i class="fas fa-thermometer-half"></i></div>
+            <div class="dsc-body">
+              <div class="dsc-lbl">Autoclave Cycle Temp</div>
+              <div class="dsc-val">134 °C — 18 min</div>
+              <span class="dsc-badge gold">CLASS B CYCLE</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3  d4">
+          <div class="dash-stat-card">
+            <div class="dsc-icon"><i class="fas fa-wind"></i></div>
+            <div class="dsc-body">
+              <div class="dsc-lbl">Air Purification System</div>
+              <div class="dsc-val">HEPA-14 Active</div>
+              <span class="dsc-badge pass">OPERATIONAL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTOCLAVE LOG + WATERLINE LOG -->
+  <section class="eq-section">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Weekly Autoclave Log -->
+        <div class="col-lg-7 ">
+          <div class="eq-table-card">
+            <div class="eq-tc-head">
+              <i class="fas fa-clipboard-list"></i> Weekly Autoclave BI Test Log
+              <span class="eq-tc-updated">Last updated: 7 Apr 2026</span>
+            </div>
+            <div class="table-responsive">
+              <table class="table eq-log-table mb-0">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Autoclave Unit</th>
+                    <th>Cycle</th>
+                    <th>Temp / Time</th>
+                    <th>BI Result</th>
+                    <th>Verified By</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>7 Apr 2026</td>
+                    <td>SciCan STATIM 5000</td>
+                    <td>Class B</td>
+                    <td>134°C / 18 min</td>
+                    <td><span class="badge-pass">PASS</span></td>
+                    <td>Sr. Nurse Amara</td>
+                  </tr>
+                  <tr>
+                    <td>31 Mar 2026</td>
+                    <td>SciCan STATIM 5000</td>
+                    <td>Class B</td>
+                    <td>134°C / 18 min</td>
+                    <td><span class="badge-pass">PASS</span></td>
+                    <td>Dr. Kanya</td>
+                  </tr>
+                  <tr>
+                    <td>24 Mar 2026</td>
+                    <td>W&amp;H Lisa</td>
+                    <td>Class B</td>
+                    <td>134°C / 18 min</td>
+                    <td><span class="badge-pass">PASS</span></td>
+                    <td>Sr. Nurse Amara</td>
+                  </tr>
+                  <tr>
+                    <td>17 Mar 2026</td>
+                    <td>SciCan STATIM 5000</td>
+                    <td>Class B</td>
+                    <td>134°C / 18 min</td>
+                    <td><span class="badge-pass">PASS</span></td>
+                    <td>Sr. Nurse Amara</td>
+                  </tr>
+                  <tr>
+                    <td>10 Mar 2026</td>
+                    <td>W&amp;H Lisa</td>
+                    <td>Class B</td>
+                    <td>134°C / 18 min</td>
+                    <td><span class="badge-pass">PASS</span></td>
+                    <td>Dr. Kanya</td>
+                  </tr>
+                  <tr>
+                    <td>3 Mar 2026</td>
+                    <td>SciCan STATIM 5000</td>
+                    <td>Class B</td>
+                    <td>134°C / 18 min</td>
+                    <td><span class="badge-pass">PASS</span></td>
+                    <td>Sr. Nurse Amara</td>
+                  </tr>
+                  <tr>
+                    <td>24 Feb 2026</td>
+                    <td>W&amp;H Lisa</td>
+                    <td>Class B</td>
+                    <td>134°C / 18 min</td>
+                    <td><span class="badge-pass">PASS</span></td>
+                    <td>Sr. Nurse Amara</td>
+                  </tr>
+                  <tr>
+                    <td>17 Feb 2026</td>
+                    <td>SciCan STATIM 5000</td>
+                    <td>Class B</td>
+                    <td>134°C / 18 min</td>
+                    <td><span class="badge-pass">PASS</span></td>
+                    <td>Dr. Kanya</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Waterline Maintenance Log -->
+        <div class="col-lg-5 ">
+          <div class="eq-table-card" style="height:100%">
+            <div class="eq-tc-head">
+              <i class="fas fa-tint"></i> Waterline Maintenance Log
+              <span class="eq-tc-updated">Last updated: 4 Apr 2026</span>
+            </div>
+            <div class="table-responsive">
+              <table class="table eq-log-table mb-0">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Unit / Chair</th>
+                    <th>CFU/mL</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>4 Apr 2026</td>
+                    <td>Chair 1 Handpiece</td>
+                    <td>&lt; 50</td>
+                    <td><span class="badge-pass">PASS</span></td>
+                  </tr>
+                  <tr>
+                    <td>4 Apr 2026</td>
+                    <td>Chair 2 Handpiece</td>
+                    <td>&lt; 50</td>
+                    <td><span class="badge-pass">PASS</span></td>
+                  </tr>
+                  <tr>
+                    <td>4 Apr 2026</td>
+                    <td>Chair 3 Handpiece</td>
+                    <td>&lt; 80</td>
+                    <td><span class="badge-pass">PASS</span></td>
+                  </tr>
+                  <tr>
+                    <td>4 Apr 2026</td>
+                    <td>Surgical Suite</td>
+                    <td>&lt; 30</td>
+                    <td><span class="badge-pass">PASS</span></td>
+                  </tr>
+                  <tr>
+                    <td>7 Mar 2026</td>
+                    <td>Chair 1 Handpiece</td>
+                    <td>&lt; 50</td>
+                    <td><span class="badge-pass">PASS</span></td>
+                  </tr>
+                  <tr>
+                    <td>7 Mar 2026</td>
+                    <td>Chair 2 Handpiece</td>
+                    <td>&lt; 70</td>
+                    <td><span class="badge-pass">PASS</span></td>
+                  </tr>
+                  <tr>
+                    <td>7 Mar 2026</td>
+                    <td>Surgical Suite</td>
+                    <td>&lt; 30</td>
+                    <td><span class="badge-pass">PASS</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPMENT SERIALS & WARRANTY -->
+  <section class="eq-section" style="background:var(--off2);padding-top:40px;">
+    <div class="container">
+      <div class="text-center mb-5 ">
+        <span class="tag mb-2"><i class="fas fa-barcode"></i>Read-Only Registry</span>
+        <h2 class="section-title">Equipment Serials &amp; Warranty</h2>
+        <p class="lead-text mx-auto" style="max-width:540px;">All clinical sterilization equipment is registered, under active warranty, and seiced on schedule.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-6 ">
+          <div class="eq-serial-card">
+            <div class="eq-sc-head"><i class="fas fa-fire"></i>Autoclaves &amp; Sterilizers</div>
+            <div class="eq-serial-row">
+              <div class="eq-sr-name">SciCan STATIM 5000</div>
+              <div class="eq-sr-det">
+                <span>Class B Steam Autoclave — Cassette Type</span>
+                <span class="eq-sr-serial">S/N: SC5K-2022-TH-00412</span>
+                <span class="eq-sr-warranty valid">Warranty valid until Dec 2027</span>
+              </div>
+            </div>
+            <div class="eq-serial-row">
+              <div class="eq-sr-name">W&amp;H Lisa</div>
+              <div class="eq-sr-det">
+                <span>Class B Benchtop Autoclave — 17 L</span>
+                <span class="eq-sr-serial">S/N: WH-LISA-TH-20230078</span>
+                <span class="eq-sr-warranty valid">Warranty valid until Mar 2028</span>
+              </div>
+            </div>
+            <div class="eq-serial-row">
+              <div class="eq-sr-name">Melag Vacuklav 44B+</div>
+              <div class="eq-sr-det">
+                <span>Class B Vacuum Autoclave — 22 L</span>
+                <span class="eq-sr-serial">S/N: MEL-44B-TH-00891</span>
+                <span class="eq-sr-warranty valid">Warranty valid until Jun 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="eq-serial-card">
+            <div class="eq-sc-head"><i class="fas fa-wind"></i>Air &amp; Surface Hygiene</div>
+            <div class="eq-serial-row">
+              <div class="eq-sr-name">IQAir GC MultiGas</div>
+              <div class="eq-sr-det">
+                <span>HEPA-14 Air Purifier — Surgical Grade</span>
+                <span class="eq-sr-serial">S/N: IQ-GCMG-TH-20240115</span>
+                <span class="eq-sr-warranty valid">Warranty valid until Jan 2029</span>
+              </div>
+            </div>
+            <div class="eq-serial-row">
+              <div class="eq-sr-name">Dürr Dental AC 300</div>
+              <div class="eq-sr-det">
+                <span>Amalgam &amp; Aerosol Separator</span>
+                <span class="eq-sr-serial">S/N: DD-AC300-TH-00234</span>
+                <span class="eq-sr-warranty valid">Warranty valid until Aug 2027</span>
+              </div>
+            </div>
+            <div class="eq-serial-row">
+              <div class="eq-sr-name">Ultrasonic Cleaner</div>
+              <div class="eq-sr-det">
+                <span>Bandelin Sonorex Digitec — Pre-sterilization</span>
+                <span class="eq-sr-serial">S/N: BD-SNRX-TH-20220544</span>
+                <span class="eq-sr-warranty valid">Warranty valid until Nov 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="eq-serial-card">
+            <div class="eq-sc-head"><i class="fas fa-flask"></i>Chemical Disinfection Systems</div>
+            <div class="eq-serial-row">
+              <div class="eq-sr-name">Dürr Dental FD 366</div>
+              <div class="eq-sr-det">
+                <span>Surface Disinfectant Spray System — EN 14476 Certified</span>
+                <span class="eq-sr-serial">Batch: FD366-2026-Q1</span>
+                <span class="eq-sr-warranty valid">Expiry: Dec 2026</span>
+              </div>
+            </div>
+            <div class="eq-serial-row">
+              <div class="eq-sr-name">Cidex OPA</div>
+              <div class="eq-sr-det">
+                <span>High-Level Disinfectant for Semi-Critical Instruments</span>
+                <span class="eq-sr-serial">Batch: CIDEX-OPA-2026-B4</span>
+                <span class="eq-sr-warranty valid">Expiry: Jul 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="eq-serial-card">
+            <div class="eq-sc-head"><i class="fas fa-tachometer-alt"></i>Monitoring &amp; Testing</div>
+            <div class="eq-serial-row">
+              <div class="eq-sr-name">Mesa Labs Biological Indicators</div>
+              <div class="eq-sr-det">
+                <span>Geobacillus stearothermophilus — Weekly BI Testing</span>
+                <span class="eq-sr-serial">Lot: MESA-BI-2026-04</span>
+                <span class="eq-sr-warranty valid">Expiry: Sep 2026</span>
+              </div>
+            </div>
+            <div class="eq-serial-row">
+              <div class="eq-sr-name">Sterrad NX Cycle Indicators</div>
+              <div class="eq-sr-det">
+                <span>Class 5 Chemical Integrators — per-pack monitoring</span>
+                <span class="eq-sr-serial">Lot: STD-CLASS5-2026-Q1</span>
+                <span class="eq-sr-warranty valid">Expiry: Dec 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STERILIZATION PROTOCOL BANNER -->
+  <section class="eq-section">
+    <div class="container">
+      <div class="eq-protocol-banner ">
+        <div class="eq-pb-title">Our Instrument Sterilization Protocol — Every Single Time</div>
+        <div class="eq-protocol-steps">
+          <div class="eq-step">
+            <div class="eq-step-num">Step 01</div>
+            <div class="eq-step-ic"><i class="fas fa-soap"></i></div>
+            <div class="eq-step-ttl">Pre-Rinse &amp; Scrub</div>
+            <div class="eq-step-dsc">Instruments are rinsed of gross debris immediately after use.</div>
+          </div>
+          <div class="eq-step-arrow"><i class="fas fa-arrow-right"></i></div>
+          <div class="eq-step">
+            <div class="eq-step-num">Step 02</div>
+            <div class="eq-step-ic"><i class="fas fa-water"></i></div>
+            <div class="eq-step-ttl">Ultrasonic Bath</div>
+            <div class="eq-step-dsc">15-minute ultrasonic cycle removes biofilm and contaminants.</div>
+          </div>
+          <div class="eq-step-arrow"><i class="fas fa-arrow-right"></i></div>
+          <div class="eq-step">
+            <div class="eq-step-num">Step 03</div>
+            <div class="eq-step-ic"><i class="fas fa-box"></i></div>
+            <div class="eq-step-ttl">Pouching</div>
+            <div class="eq-step-dsc">Each instrument is individually sealed in a sterilization pouch with a Class 5 indicator strip.</div>
+          </div>
+          <div class="eq-step-arrow"><i class="fas fa-arrow-right"></i></div>
+          <div class="eq-step">
+            <div class="eq-step-num">Step 04</div>
+            <div class="eq-step-ic"><i class="fas fa-fire"></i></div>
+            <div class="eq-step-ttl">Autoclave Cycle</div>
+            <div class="eq-step-dsc">134°C Class B steam cycle for 18 minutes. Logged digitally.</div>
+          </div>
+          <div class="eq-step-arrow"><i class="fas fa-arrow-right"></i></div>
+          <div class="eq-step">
+            <div class="eq-step-num">Step 05</div>
+            <div class="eq-step-ic"><i class="fas fa-check-circle"></i></div>
+            <div class="eq-step-ttl">Verification</div>
+            <div class="eq-step-dsc">Indicator checked. BI test performed weekly. Records filed monthly.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <svg viewBox="0 0 580 150" xmlns="http://www.w3.org/2000/svg" class="f-logo">
+            <defs>
+              <linearGradient id="fG" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#9A7A1A" />
+                <stop offset="50%" stop-color="#C9A227" />
+                <stop offset="100%" stop-color="#9A7A1A" />
+              </linearGradient>
+            </defs>
+            <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-family="DM Serif Display,serif" font-size="96" fill="url(#fG)">THARISH</text>
+            <text x="50%" y="88%" dominant-baseline="middle" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-size="15" font-weight="600" letter-spacing="9" fill="#9A7A1A">DENTAL CLINIC</text>
+          </svg>
+          <p class="f-tag">Where precision meets elegance. World-class dental care with a personal touch since 2009.</p>
+          <div class="f-soc">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="f-hd">Seices</div>
+          <ul class="f-links">
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Dental Implants</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Orthodontics</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Aesthetic Dentistry</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Periodontics</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Prosthodontics</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Pediatric Care</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Oral Surgery</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>General Dentistry</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="f-hd">Help &amp; Support</div>
+          <ul class="f-links">
+            <li><a href="about.html"><i class="fas fa-circle"></i>About Us</a></li>
+            <li><a href="team.html"><i class="fas fa-circle"></i>Our Doctors</a></li>
+            <li><a href="sterilization.html"><i class="fas fa-circle"></i>Sterilization</a></li>
+            <li><a href="equipment-showroom.html"><i class="fas fa-circle"></i>Equipment</a></li>
+            <li><a href="complication-policy.html"><i class="fas fa-circle"></i>Complication Policy</a></li>
+            <li><a href="index.html#appointment"><i class="fas fa-circle"></i>Appointment</a></li>
+            <li><a href="contact.html"><i class="fas fa-circle"></i>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="f-hd">Contact</div>
+          <ul class="f-links">
+            <li><a href="#"><i class="fas fa-circle"></i>+91 98765 43210</a></li>
+            <li><a href="#"><i class="fas fa-circle"></i>info@tharishdental.com</a></li>
+            <li><a href="#"><i class="fas fa-circle"></i>Thailand</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="f-hd">Working Hours</div>
+          <div class="f-hr-row"><span class="f-hr-day">Monday – Friday</span><span>9am – 7pm</span></div>
+          <div class="f-hr-row"><span class="f-hr-day">Saturday</span><span>9am – 6pm</span></div>
+          <div class="f-hr-row"><span class="f-hr-day">Sunday</span><span>10am – 2pm</span></div>
+          <div style="margin-top:1.3rem"><a href="index.html#appointment" class="btn-gold" style="font-size:.74rem;padding:.68rem 1.45rem"><i class="fas fa-calendar-check"></i>Book Now</a></div>
+        </div>
+      </div>
+      <div class="f-accred-row">
+        <div class="f-accred-lbl">Accreditations &amp; Certifications</div>
+        <div class="f-accred-logos">
+          <div class="f-accred-badge"><i class="fas fa-certificate"></i><span>ISO 13485</span></div>
+          <div class="f-accred-badge f-accred-badge--dbd"><span class="f-accred-dbd-txt">DBD</span><span>Registered Business</span></div>
+          <div class="f-accred-badge"><i class="fas fa-shield-alt"></i><span>ISO 9001</span></div>
+          <div class="f-accred-badge"><i class="fas fa-award"></i><span>Best Dental Clinic</span></div>
+          <div class="f-accred-badge"><i class="fas fa-star"></i><span>4.9★ Google Rating</span></div>
+        </div>
+      </div>
+      <div class="f-bot"><span>© 2026 Tharish Dental Clinic. All Rights Reseed.</span>
+        <div class="d-flex gap-3 flex-wrap"><a href="#">Privacy Policy</a><a href="#">Terms of Seice</a><a href="#">Sitemap</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="btt"><i class="fas fa-chevron-up"></i></a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="assets/page.js"></script>
+</body>
+
+</html>

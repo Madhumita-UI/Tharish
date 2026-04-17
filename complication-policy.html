@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- <script src="assets/protect.js"></script> -->
+  <title>Complication Policy &amp; Second-Opinion Pledge — Tharish Dental Clinic</title>
+  <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="assets/equipment.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div id="topbar">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex gap-4 flex-wrap">
+          <span class="info"><i class="fas fa-phone"></i>+91 98765 43210</span>
+          <span class="info d-none d-md-flex"><i class="fas fa-clock"></i>Mon–Sat: 9AM–7PM &nbsp;|&nbsp; Sun: 10AM–2PM</span>
+          <span class="info d-none d-lg-flex"><i class="fas fa-map-marker-alt"></i>Thailand</span>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <div class="lang-toggle" id="langToggle" role="group" aria-label="Language">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="th">TH</button>
+          </div>
+          <div class="socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo.png" alt="Tharish Dental Clinic Logo" height="42" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navM"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse justify-content-end" id="navM">
+        <ul class="navbar-nav align-items-center gap-1 ms-4">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <!-- CASE STUDIES DROPDOWN -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="caseDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Case Studies <i class="fas fa-chevron-down treat-arrow"></i>
+            </a>
+            <ul class="dropdown-menu treat-drop shadow" aria-labelledby="caseDrop">
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-tooth"></i>Implant Cases</a></li>
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-smile"></i>Orthodontic Cases</a></li>
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-star"></i>Aesthetic Cases</a></li>
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-crown"></i>Full Mouth Rehab</a></li>
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-child"></i>Pediatric Cases</a></li>
+            </ul>
+          </li>
+          <!-- TREATMENTS DROPDOWN -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="treatDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Treatments <i class="fas fa-chevron-down treat-arrow"></i>
+            </a>
+            <ul class="dropdown-menu treat-drop shadow" aria-labelledby="treatDrop">
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-tooth"></i>Dental Implants<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Single Implants</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Multiple Implants</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">All-on-4 Implants</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Mini Implants</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-smile"></i>Orthodontic Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Metal Braces</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Clear Aligners</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Lingual Braces</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Retainers</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-star"></i>Aesthetic Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Teeth Whitening</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Porcelain Veneers</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Dental Bonding</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Smile Makeover</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-leaf"></i>Periodontic Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Gum Disease Treatment</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Scaling &amp; Root Planing</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Gum Surgery</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Bone Grafting</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-crown"></i>Prosthodontic Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Dental Crowns</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Bridges</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Dentures</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Inlays &amp; Onlays</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-syringe"></i>Endodontic Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Root Canal Treatment</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Retreatment</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Pulp Capping</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Apicoectomy</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-child"></i>Pediatric Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Baby Teeth Care</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Fluoride Treatment</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Dental Sealants</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Space Maintainers</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-shield-alt"></i>Occlusion Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Bite Correction</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Night Guards</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">TMJ Treatment</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Occlusal Splints</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-teeth-open"></i>Oral Surgery<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Tooth Extraction</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Wisdom Teeth Removal</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Bone Grafting</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Jaw Surgery</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-check-double"></i>General Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Cleaning &amp; Scaling</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Dental Fillings</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">X-Rays &amp; Diagnosis</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Preventive Care</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="team.html">Doctors</a></li>
+          <!-- TECHNOLOGY DROPDOWN -->
+          <li class="nav-item dropdown">
+            <a class="nav-link active" href="#" id="techDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Technology <i class="fas fa-chevron-down treat-arrow"></i>
+            </a>
+            <ul class="dropdown-menu treat-drop shadow" aria-labelledby="techDrop">
+              <li><a class="dropdown-item" href="sterilization.html"><i class="fas fa-shield-virus"></i>Sterilization &amp; Quality</a></li>
+              <li><a class="dropdown-item" href="equipment-showroom.html"><i class="fas fa-microscope"></i>Equipment Showroom</a></li>
+              <li><a class="dropdown-item" href="complication-policy.html"><i class="fas fa-handshake"></i>Complication Policy</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-2"><a class="nav-link nav-cta" href="index.html#appointment">Book Now</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="eq-page-hero">
+    <div class="eq-ph-bg" style="background-image:url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80&auto=format&fit=crop')"></div>
+    <div class="eq-ph-overlay"></div>
+    <div class="container eq-ph-inner">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <span class="tag mb-3"><i class="fas fa-handshake"></i>Honesty &amp; Accountability</span>
+          <h1 class="section-title text-white mb-3">We Stand Behind<br><span style="color:var(--gold-lt)">Every Treatment</span></h1>
+          <p class="lead-text text-white" style="opacity:.85;max-width:580px;">Complications in dentistry are rare — but they do happen, even with the best clinicians and protocols. This page tells you plainly what to expect from us if anything ever falls short.</p>
+          <div class="d-flex gap-3 flex-wrap mt-4">
+            <a href="sterilization.html" class="btn-white"><i class="fas fa-shield-virus"></i>Sterilization Dashboard</a>
+            <a href="equipment-showroom.html" class="btn-white"><i class="fas fa-microscope"></i>Equipment Showroom</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO SECTION -->
+  <section class="eq-section" style="background:var(--off2);padding-bottom:0;">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 ">
+          <span class="tag mb-3"><i class="fas fa-comments"></i>A Word from Our Team</span>
+          <h2 class="section-title mb-3">We'd Rather Be Honest Than Perfect-Sounding</h2>
+          <p class="lead-text mb-3">No clinic can promise zero complications. Healing varies from person to person. Materials behave differently. Sometimes the unexpected happens — despite meticulous preparation and skilled hands.</p>
+          <p class="lead-text mb-3">What we can promise is this: we will never ignore a problem, never minimise your concern, and never leave you to figure things out alone. If something goes wrong, we show up — with transparency, urgency, and care.</p>
+          <p class="lead-text">This page is our commitment to you, in plain language.</p>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="s-chip">
+                <div class="s-chip-n">48h</div>
+                <div class="s-chip-l">Response Guarantee for Any Concern Raised</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="s-chip">
+                <div class="s-chip-n">100%</div>
+                <div class="s-chip-l">Free Follow-Up for Complications Within Scope</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="s-chip">
+                <div class="s-chip-n">Free</div>
+                <div class="s-chip-l">Second Opinion — No Referral Required</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="s-chip">
+                <div class="s-chip-n">17yr</div>
+                <div class="s-chip-l">Track Record of Transparent Patient Care</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POLICY CARDS -->
+  <section class="eq-section">
+    <div class="container">
+      <div class="text-center mb-5 ">
+        <span class="tag mb-2"><i class="fas fa-file-medical"></i>Our Policy</span>
+        <h2 class="section-title">What You Can Expect From Us</h2>
+        <p class="lead-text mx-auto" style="max-width:560px;">These are not terms and conditions. They are human commitments — written so they mean something.</p>
+      </div>
+      <div class="row g-4">
+
+        <!-- Card 1: If a complication occurs -->
+        <div class="col-lg-6 ">
+          <div class="policy-card">
+            <div class="policy-icon"><i class="fas fa-stethoscope"></i></div>
+            <div class="policy-ttl">If a Complication Occurs</div>
+            <p class="policy-txt">We know that unexpected post-treatment symptoms — swelling that lingers too long, sensitivity that doesn't ease, or a restoration that feels off — can be unsettling. Here's exactly what happens next:</p>
+            <div class="policy-commit">
+              <div class="pc-item"><i class="fas fa-check-circle"></i>You can contact us any time — call, WhatsApp, or email.</div>
+              <div class="pc-item"><i class="fas fa-check-circle"></i>We will respond within 48 hours, often the same day.</div>
+              <div class="pc-item"><i class="fas fa-check-circle"></i>We will schedule a review appointment at no charge — no debate, no forms.</div>
+              <div class="pc-item"><i class="fas fa-check-circle"></i>Your treating clinician will personally assess the situation.</div>
+              <div class="pc-item"><i class="fas fa-check-circle"></i>If remedial treatment is required and falls within the original scope, we cover it.</div>
+              <div class="pc-item"><i class="fas fa-check-circle"></i>You will be kept informed at every step — no medical jargon, no vague reassurances.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Second opinion -->
+        <div class="col-lg-6">
+          <div class="policy-card policy-card-alt">
+            <div class="policy-icon policy-icon-gold"><i class="fas fa-user-md"></i></div>
+            <div class="policy-ttl">Our Second-Opinion Pledge</div>
+            <p class="policy-txt">We actively encourage our patients to seek second opinions — especially for complex procedures or significant treatment plans. We believe an informed patient is the best patient, and confidence in your decision matters far more than our convenience.</p>
+            <div class="policy-commit">
+              <div class="pc-item"><i class="fas fa-check-circle"></i>Request a second opinion from any dentist, at any time — we support it fully.</div>
+              <div class="pc-item"><i class="fas fa-check-circle"></i>We will prepare and hand over your complete case file, X-rays, and records.</div>
+              <div class="pc-item"><i class="fas fa-check-circle"></i>No pressure, no follow-up calls, no judgment.</div>
+              <div class="pc-item"><i class="fas fa-check-circle"></i>If you'd prefer an independent review within our clinic, we can arrange a different senior clinician.</div>
+              <div class="pc-item"><i class="fas fa-check-circle"></i>Your trust is more important to us than any single booking.</div>
+            </div>
+            <div class="policy-quote">
+              <blockquote>"A second opinion should never be an uncomfortable ask. At Tharish, it is always welcome."</blockquote>
+              <cite>— Dr. Tharish, Founder &amp; Lead Clinician</cite>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE COMMIT TO — DETAILED LIST -->
+  <section class="eq-section" style="background:var(--off2);padding-top:40px;">
+    <div class="container">
+      <div class="text-center mb-5 ">
+        <span class="tag mb-2"><i class="fas fa-heart"></i>Our Core Commitments</span>
+        <h2 class="section-title">Transparency in Every Step</h2>
+        <p class="lead-text mx-auto" style="max-width:540px;">This is what good care looks like in practice — not just in theory.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-xl-3  d1">
+          <div class="dash-stat-card">
+            <div class="dsc-icon"><i class="fas fa-comments"></i></div>
+            <div class="dsc-body">
+              <div class="dsc-lbl">Honest Communication</div>
+              <div class="dsc-val">We tell you the truth about your treatment — including risks, alternatives, and realistic outcomes.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3  d2">
+          <div class="dash-stat-card">
+            <div class="dsc-icon"><i class="fas fa-undo-alt"></i></div>
+            <div class="dsc-body">
+              <div class="dsc-lbl">Follow-Up at No Cost</div>
+              <div class="dsc-val">Review visits for complications arising from our treatments are always free of charge.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3  d3">
+          <div class="dash-stat-card">
+            <div class="dsc-icon"><i class="fas fa-file-alt"></i></div>
+            <div class="dsc-body">
+              <div class="dsc-lbl">Full Records Access</div>
+              <div class="dsc-val">Your treatment records, X-rays, and photos are yours. We provide them promptly, whenever you need them.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-3  d4">
+          <div class="dash-stat-card">
+            <div class="dsc-icon"><i class="fas fa-user-friends"></i></div>
+            <div class="dsc-body">
+              <div class="dsc-lbl">Continuity of Care</div>
+              <div class="dsc-val">Your treating clinician remains accountable throughout. We don't pass patients between staff without proper handover.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT IS & ISN'T COVERED -->
+  <section class="eq-section">
+    <div class="container">
+      <div class="text-center mb-5 ">
+        <span class="tag mb-2"><i class="fas fa-balance-scale"></i>For Clarity</span>
+        <h2 class="section-title">What Falls Within Our Policy</h2>
+        <p class="lead-text mx-auto" style="max-width:560px;">We want to be upfront about both what we cover and what sits outside our control, so there are no surprises.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-6 ">
+          <div class="policy-card" style="border-left: 4px solid #10B981;">
+            <div class="policy-icon" style="background:linear-gradient(135deg,#059669,#10B981)"><i class="fas fa-check"></i></div>
+            <div class="policy-ttl" style="color:#065F46;">Covered Under This Policy</div>
+            <div class="policy-commit">
+              <div class="pc-item"><i class="fas fa-check-circle" style="color:#10B981"></i>Post-procedure sensitivity or discomfort beyond expected recovery</div>
+              <div class="pc-item"><i class="fas fa-check-circle" style="color:#10B981"></i>Restoration that fractures, debonds, or does not fit correctly</div>
+              <div class="pc-item"><i class="fas fa-check-circle" style="color:#10B981"></i>Implant failure or integration issues within the first year</div>
+              <div class="pc-item"><i class="fas fa-check-circle" style="color:#10B981"></i>Swelling, infection, or perioperative complications linked to our procedure</div>
+              <div class="pc-item"><i class="fas fa-check-circle" style="color:#10B981"></i>Any adverse outcome we identify as attributable to our clinical process</div>
+              <div class="pc-item"><i class="fas fa-check-circle" style="color:#10B981"></i>Review consultation and diagnosis — always free, always prompt</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="policy-card" style="border-left: 4px solid var(--gold);">
+            <div class="policy-icon"><i class="fas fa-info"></i></div>
+            <div class="policy-ttl">Areas Outside Our Direct Control</div>
+            <p class="policy-txt">These are circumstances where outcomes may vary despite every best practice being followed. We will still support you through them — but remedial costs may apply:</p>
+            <div class="policy-commit">
+              <div class="pc-item"><i class="fas fa-circle" style="font-size:.45rem;color:var(--gold)"></i>Patient non-compliance with post-treatment instructions</div>
+              <div class="pc-item"><i class="fas fa-circle" style="font-size:.45rem;color:var(--gold)"></i>Systemic medical conditions affecting healing (e.g. uncontrolled diabetes)</div>
+              <div class="pc-item"><i class="fas fa-circle" style="font-size:.45rem;color:var(--gold)"></i>Damage caused by injury or accident after treatment</div>
+              <div class="pc-item"><i class="fas fa-circle" style="font-size:.45rem;color:var(--gold)"></i>Natural biological failure where all clinical standards were met</div>
+              <div class="pc-item"><i class="fas fa-circle" style="font-size:.45rem;color:var(--gold)"></i>Issues arising from treatments performed elsewhere</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT CTA -->
+  <section class="eq-section" style="background:var(--dark);padding:5rem 0;">
+    <div class="container  text-center">
+      <span class="tag mb-3"><i class="fas fa-phone"></i>We're Here</span>
+      <h2 class="section-title text-white mb-3">Have a Concern?<br><span style="color:var(--gold-lt)">Please Reach Out.</span></h2>
+      <p class="lead-text text-white mb-5" style="opacity:.8;max-width:520px;margin:0 auto 2rem;">You don't need a reason to contact us. If something feels off, or you just want to ask a question — call us, message us, or come in. We'll always make time for you.</p>
+      <div class="d-flex gap-3 justify-content-center flex-wrap">
+        <a href="tel:+919876543210" class="btn-gold"><i class="fas fa-phone"></i>Call Us Now</a>
+        <a href="index.html#appointment" class="btn-white" style="color:var(--gold-dk)"><i class="fas fa-calendar-check"></i>Book a Review</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <svg viewBox="0 0 580 150" xmlns="http://www.w3.org/2000/svg" class="f-logo">
+            <defs>
+              <linearGradient id="fG" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#9A7A1A" />
+                <stop offset="50%" stop-color="#C9A227" />
+                <stop offset="100%" stop-color="#9A7A1A" />
+              </linearGradient>
+            </defs>
+            <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-family="DM Serif Display,serif" font-size="96" fill="url(#fG)">THARISH</text>
+            <text x="50%" y="88%" dominant-baseline="middle" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-size="15" font-weight="600" letter-spacing="9" fill="#9A7A1A">DENTAL CLINIC</text>
+          </svg>
+          <p class="f-tag">Where precision meets elegance. World-class dental care with a personal touch since 2009.</p>
+          <div class="f-soc">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="f-hd">Seices</div>
+          <ul class="f-links">
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Dental Implants</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Orthodontics</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Aesthetic Dentistry</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Periodontics</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Prosthodontics</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Pediatric Care</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Oral Surgery</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>General Dentistry</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="f-hd">Help &amp; Support</div>
+          <ul class="f-links">
+            <li><a href="about.html"><i class="fas fa-circle"></i>About Us</a></li>
+            <li><a href="team.html"><i class="fas fa-circle"></i>Our Doctors</a></li>
+            <li><a href="sterilization.html"><i class="fas fa-circle"></i>Sterilization</a></li>
+            <li><a href="equipment-showroom.html"><i class="fas fa-circle"></i>Equipment</a></li>
+            <li><a href="complication-policy.html"><i class="fas fa-circle"></i>Complication Policy</a></li>
+            <li><a href="index.html#appointment"><i class="fas fa-circle"></i>Appointment</a></li>
+            <li><a href="contact.html"><i class="fas fa-circle"></i>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="f-hd">Contact</div>
+          <ul class="f-links">
+            <li><a href="#"><i class="fas fa-circle"></i>+91 98765 43210</a></li>
+            <li><a href="#"><i class="fas fa-circle"></i>info@tharishdental.com</a></li>
+            <li><a href="#"><i class="fas fa-circle"></i>Thailand</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="f-hd">Working Hours</div>
+          <div class="f-hr-row"><span class="f-hr-day">Monday – Friday</span><span>9am – 7pm</span></div>
+          <div class="f-hr-row"><span class="f-hr-day">Saturday</span><span>9am – 6pm</span></div>
+          <div class="f-hr-row"><span class="f-hr-day">Sunday</span><span>10am – 2pm</span></div>
+          <div style="margin-top:1.3rem"><a href="index.html#appointment" class="btn-gold" style="font-size:.74rem;padding:.68rem 1.45rem"><i class="fas fa-calendar-check"></i>Book Now</a></div>
+        </div>
+      </div>
+      <div class="f-accred-row">
+        <div class="f-accred-lbl">Accreditations &amp; Certifications</div>
+        <div class="f-accred-logos">
+          <div class="f-accred-badge"><i class="fas fa-certificate"></i><span>ISO 13485</span></div>
+          <div class="f-accred-badge f-accred-badge--dbd"><span class="f-accred-dbd-txt">DBD</span><span>Registered Business</span></div>
+          <div class="f-accred-badge"><i class="fas fa-shield-alt"></i><span>ISO 9001</span></div>
+          <div class="f-accred-badge"><i class="fas fa-award"></i><span>Best Dental Clinic</span></div>
+          <div class="f-accred-badge"><i class="fas fa-star"></i><span>4.9★ Google Rating</span></div>
+        </div>
+      </div>
+      <div class="f-bot"><span>© 2026 Tharish Dental Clinic. All Rights Reseed.</span>
+        <div class="d-flex gap-3 flex-wrap"><a href="#">Privacy Policy</a><a href="#">Terms of Seice</a><a href="#">Sitemap</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="btt"><i class="fas fa-chevron-up"></i></a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="assets/page.js"></script>
+</body>
+
+</html>

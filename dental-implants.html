@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- <script src="assets/protect.js"></script> -->
+  <title>Dental Implants — Tharish Dental Clinic</title>
+  <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="assets/treatment.css" />
+
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div id="topbar">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex gap-4 flex-wrap">
+          <span class="info"><i class="fas fa-phone"></i>+91 98765 43210</span>
+          <span class="info d-none d-md-flex"><i class="fas fa-clock"></i>Mon–Sat: 9AM–7PM &nbsp;|&nbsp; Sun: 10AM–2PM</span>
+          <span class="info d-none d-lg-flex"><i class="fas fa-map-marker-alt"></i>Thailand</span>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <div class="lang-toggle" id="langToggle" role="group" aria-label="Language">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="th">TH</button>
+          </div>
+          <div class="socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo.png" alt="Tharish Dental Clinic Logo" height="42" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navM"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse justify-content-end" id="navM">
+        <ul class="navbar-nav align-items-center gap-1 ms-4">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <!-- CASE STUDIES DROPDOWN -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="caseDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Case Studies <i class="fas fa-chevron-down treat-arrow"></i>
+            </a>
+            <ul class="dropdown-menu treat-drop shadow" aria-labelledby="caseDrop">
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-tooth"></i>Implant Cases</a></li>
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-smile"></i>Orthodontic Cases</a></li>
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-star"></i>Aesthetic Cases</a></li>
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-crown"></i>Full Mouth Rehab</a></li>
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-child"></i>Pediatric Cases</a></li>
+            </ul>
+          </li>
+          <!-- TREATMENTS DROPDOWN -->
+          <li class="nav-item dropdown">
+            <a class="nav-link active" href="#" id="treatDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Treatments <i class="fas fa-chevron-down treat-arrow"></i>
+            </a>
+            <ul class="dropdown-menu treat-drop shadow" aria-labelledby="treatDrop">
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="dental-implants.html"><i class="fas fa-tooth"></i>Dental Implants<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="dental-implants.html?tab=single">Single Implants</a></li>
+                  <li><a class="dropdown-item" href="dental-implants.html?tab=multiple">Multiple Implants</a></li>
+                  <li><a class="dropdown-item" href="dental-implants.html?tab=allon4">All-on-4 Implants</a></li>
+                  <li><a class="dropdown-item" href="dental-implants.html?tab=mini">Mini Implants</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-smile"></i>Orthodontic Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Metal Braces</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Clear Aligners</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Lingual Braces</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Retainers</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-star"></i>Aesthetic Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Teeth Whitening</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Porcelain Veneers</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Dental Bonding</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Smile Makeover</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-leaf"></i>Periodontic Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Gum Disease Treatment</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Scaling &amp; Root Planing</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Gum Surgery</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Bone Grafting</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-crown"></i>Prosthodontic Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Dental Crowns</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Bridges</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Dentures</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Inlays &amp; Onlays</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-syringe"></i>Endodontic Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Root Canal Treatment</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Retreatment</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Pulp Capping</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Apicoectomy</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-child"></i>Pediatric Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Baby Teeth Care</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Fluoride Treatment</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Dental Sealants</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Space Maintainers</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-shield-alt"></i>Occlusion Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Bite Correction</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Night Guards</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">TMJ Treatment</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Occlusal Splints</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-teeth-open"></i>Oral Surgery<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Tooth Extraction</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Wisdom Teeth Removal</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Bone Grafting</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Jaw Surgery</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-check-double"></i>General Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Cleaning &amp; Scaling</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Dental Fillings</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">X-Rays &amp; Diagnosis</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Preventive Care</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="team.html">Doctors</a></li>
+          <!-- TECHNOLOGY DROPDOWN -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="techDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Technology <i class="fas fa-chevron-down treat-arrow"></i>
+            </a>
+            <ul class="dropdown-menu treat-drop shadow" aria-labelledby="techDrop">
+              <li><a class="dropdown-item" href="sterilization.html"><i class="fas fa-shield-virus"></i>Sterilization &amp; Quality</a></li>
+              <li><a class="dropdown-item" href="equipment-showroom.html"><i class="fas fa-microscope"></i>Equipment Showroom</a></li>
+              <li><a class="dropdown-item" href="complication-policy.html"><i class="fas fa-handshake"></i>Complication Policy</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-2"><a class="nav-link nav-cta" href="index.html#appointment">Book Now</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="ti-hero">
+    <div class="ti-hero-bg"></div>
+    <div class="ti-hero-overlay"></div>
+    <div class="container ti-hero-inner">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <nav class="ti-breadcrumb" aria-label="breadcrumb">
+            <a href="index.html">Home</a>
+            <i class="fas fa-chevron-right sep"></i>
+            <a href="#">Treatments</a>
+            <i class="fas fa-chevron-right sep"></i>
+            <span class="current">Dental Implants</span>
+          </nav>
+          <span class="tag mb-3"><i class="fas fa-tooth"></i>Dental Implants</span>
+          <h1 class="section-title text-white mb-3">Permanent Teeth,<br><span style="color:var(--gold-lt)">Natural Confidence</span></h1>
+          <p class="lead-text text-white" style="opacity:.85;max-width:580px;">Our implant specialists use the latest titanium and zirconia implant systems to deliver restorations that look, feel, and function exactly like natural teeth — with outcomes built to last a lifetime.</p>
+          <div class="ti-pill-strip">
+            <span class="ti-pill"><i class="fas fa-check-circle"></i>98% Success Rate</span>
+            <span class="ti-pill"><i class="fas fa-check-circle"></i>Lifetime Warranty</span>
+            <span class="ti-pill"><i class="fas fa-check-circle"></i>Same-Day Consult</span>
+            <span class="ti-pill"><i class="fas fa-check-circle"></i>Sedation Available</span>
+          </div>
+          <div class="d-flex gap-3 flex-wrap mt-4">
+            <a href="index.html#appointment" class="btn-gold"><i class="fas fa-calendar-check"></i>Book Consultation</a>
+            <a href="contact.html" class="btn-white"><i class="fas fa-phone"></i>Call Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN TAB SECTION -->
+  <section class="ti-section" id="implant-types">
+    <div class="container">
+
+      <div class="text-center mb-4" data-aos="fade-up">
+        <span class="tag mb-2"><i class="fas fa-list-ul"></i>Implant Options</span>
+        <h2 class="section-title">Choose Your Implant Solution</h2>
+        <p class="lead-text mx-auto" style="max-width:540px;">Every patient is different. Explore our four implant types and find the solution that suits your anatomy, lifestyle, and goals.</p>
+      </div>
+
+      <!-- TAB NAV -->
+      <ul class="ti-tab-nav" role="tablist" id="implantTabNav" data-aos="fade-up" data-aos-delay="100">
+        <li role="presentation">
+          <button class="ti-tab-btn active" data-tab="single" role="tab" aria-selected="true">
+            <i class="fas fa-circle-dot"></i>Single Implant
+          </button>
+        </li>
+        <li role="presentation">
+          <button class="ti-tab-btn" data-tab="multiple" role="tab" aria-selected="false">
+            <i class="fas fa-teeth"></i>Multiple Implants
+          </button>
+        </li>
+        <li role="presentation">
+          <button class="ti-tab-btn" data-tab="allon4" role="tab" aria-selected="false">
+            <i class="fas fa-star"></i>All-on-4 Implants
+          </button>
+        </li>
+        <li role="presentation">
+          <button class="ti-tab-btn" data-tab="mini" role="tab" aria-selected="false">
+            <i class="fas fa-seedling"></i>Mini Implants
+          </button>
+        </li>
+      </ul>
+
+      <!-- ════════════════ TAB 1: SINGLE IMPLANTS ════════════════ -->
+      <div class="ti-tab-pane active" id="tab-single">
+        <!-- Row 1: image + intro -->
+        <div class="row g-5 align-items-center mb-4">
+          <div class="col-lg-5" data-aos="fade-right">
+            <img
+              src="https://images.pexels.com/photos/6627660/pexels-photo-6627660.jpeg?auto=compress&cs=tinysrgb&w=800&fit=max"
+              alt="Single Dental Implant" class="ti-detail-img" />
+          </div>
+          <div class="col-lg-7" data-aos="fade-left">
+            <span class="ti-tag-chip"><i class="fas fa-circle-dot"></i>Single Implant</span>
+            <h2 class="ti-title">Replace One Missing Tooth — Perfectly</h2>
+            <p class="ti-lead">A single dental implant is the gold-standard replacement for one missing tooth. A titanium post is placed into the jawbone, a custom ceramic crown is attached on top, and the result is indistinguishable from your natural teeth.</p>
+            <div class="ti-stats">
+              <div class="ti-stat"><div class="ti-stat-n">98%</div><div class="ti-stat-l">Success Rate</div></div>
+              <div class="ti-stat"><div class="ti-stat-n">25+</div><div class="ti-stat-l">Years Longevity</div></div>
+              <div class="ti-stat"><div class="ti-stat-n">1</div><div class="ti-stat-l">Tooth Replaced</div></div>
+              <div class="ti-stat"><div class="ti-stat-n">3–4</div><div class="ti-stat-l">Month Process</div></div>
+            </div>
+            <ul class="ti-checks">
+              <li><i class="fas fa-check-circle"></i>No impact on adjacent teeth</li>
+              <li><i class="fas fa-check-circle"></i>Preserves jawbone density</li>
+              <li><i class="fas fa-check-circle"></i>Feels 100% natural</li>
+              <li><i class="fas fa-check-circle"></i>Easy to clean &amp; maintain</li>
+              <li><i class="fas fa-check-circle"></i>Titanium or zirconia post</li>
+              <li><i class="fas fa-check-circle"></i>Custom ceramic crown</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- BEFORE / AFTER SLIDER — SINGLE -->
+        <div class="ba-section" data-aos="fade-up">
+          <div class="ba-header">
+            <span class="ti-tag-chip"><i class="fas fa-images"></i>Patient Results</span>
+            <h3 class="ba-heading">Before &amp; After</h3>
+            <p class="ba-sub">Real results from patients who chose single implant restoration at our clinic.</p>
+          </div>
+          <div class="ba-comparison-slider" data-comparison="single">
+            <img src="assets/images/before.jpg" alt="Before single implant" class="ba-img-before" />
+            <img src="assets/images/after.jpg" alt="After single implant" class="ba-img-after" />
+            <div class="ba-divider-line">
+              <div class="ba-handle"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-right"></i></div>
+              <span class="ba-label ba-label-before">Before</span>
+              <span class="ba-label ba-label-after">After</span>
+            </div>
+          </div>
+          <p class="ba-caption-text">Single crown replacement — lower molar · 3-month treatment</p>
+        </div>
+
+        <!-- Row 2: treatment steps full-width -->
+        <div data-aos="fade-up">
+          <div class="ti-steps-wrap">
+            <div class="ti-steps-heading">Treatment Process</div>
+            <div class="ti-steps-row">
+              <div class="ti-step">
+                <div class="ti-step-badge" style="position:relative">
+                  <i class="fas fa-comments"></i>
+                  <span class="ti-step-num-label">1</span>
+                </div>
+                <div class="ti-step-title">Consultation &amp; 3D Imaging</div>
+                <p class="ti-step-desc">A full CBCT scan maps your bone volume and nerve positions in 3D for precise implant planning.</p>
+              </div>
+              <div class="ti-step">
+                <div class="ti-step-badge" style="position:relative">
+                  <i class="fas fa-syringe"></i>
+                  <span class="ti-step-num-label">2</span>
+                </div>
+                <div class="ti-step-title">Implant Placement</div>
+                <p class="ti-step-desc">The titanium post is placed under local anaesthesia using a guided surgical template for accuracy.</p>
+              </div>
+              <div class="ti-step">
+                <div class="ti-step-badge" style="position:relative">
+                  <i class="fas fa-clock"></i>
+                  <span class="ti-step-num-label">3</span>
+                </div>
+                <div class="ti-step-title">Osseointegration (Healing)</div>
+                <p class="ti-step-desc">Over 8–12 weeks the implant fuses to your jawbone, forming a permanent anchor.</p>
+              </div>
+              <div class="ti-step">
+                <div class="ti-step-badge" style="position:relative">
+                  <i class="fas fa-crown"></i>
+                  <span class="ti-step-num-label">4</span>
+                </div>
+                <div class="ti-step-title">Crown Attachment</div>
+                <p class="ti-step-desc">A porcelain crown matched to your shade is fitted onto the implant — your new permanent tooth.</p>
+              </div>
+              <div class="ti-step">
+                <div class="ti-step-badge" style="position:relative">
+                  <i class="fas fa-stethoscope"></i>
+                  <span class="ti-step-num-label">5</span>
+                </div>
+                <div class="ti-step-title">Recheck &amp; Follow-Up</div>
+                <p class="ti-step-desc">Scheduled reviews at 6 weeks and 6 months verify integration, crown fit, and long-term gum health.</p>
+              </div>
+            </div>
+          </div>
+          <a href="index.html#appointment" class="btn-gold justify-content-center d-flex mx-auto"><i class="fas fa-calendar-check"></i>Book Single Implant Consult</a>
+        </div>
+      </div>
+
+      <!-- ════════════════ TAB 2: MULTIPLE IMPLANTS ════════════════ -->
+      <div class="ti-tab-pane" id="tab-multiple">
+        <!-- Row 1: image + intro -->
+        <div class="row g-5 align-items-center mb-4">
+          <div class="col-lg-5" data-aos="fade-right">
+            <img
+              src="https://images.pexels.com/photos/6627661/pexels-photo-6627661.jpeg?auto=compress&cs=tinysrgb&w=800&fit=max"
+              alt="Multiple Dental Implants" class="ti-detail-img" />
+          </div>
+          <div class="col-lg-7" data-aos="fade-left">
+            <span class="ti-tag-chip"><i class="fas fa-teeth"></i>Multiple Implants</span>
+            <h2 class="ti-title">Restore Several Teeth with Implant-Supported Bridges</h2>
+            <p class="ti-lead">When several adjacent teeth are missing, implant-supported bridges eliminate the need for individual implants at every site. Two or three implant posts can anchor a multi-tooth bridge, preserving more bone while reducing cost and treatment time.</p>
+            <div class="ti-stats">
+              <div class="ti-stat"><div class="ti-stat-n">96%</div><div class="ti-stat-l">Success Rate</div></div>
+              <div class="ti-stat"><div class="ti-stat-n">2–6</div><div class="ti-stat-l">Teeth Replaced</div></div>
+              <div class="ti-stat"><div class="ti-stat-n">20+</div><div class="ti-stat-l">Years Longevity</div></div>
+              <div class="ti-stat"><div class="ti-stat-n">4–5</div><div class="ti-stat-l">Month Process</div></div>
+            </div>
+            <ul class="ti-checks">
+              <li><i class="fas fa-check-circle"></i>Fewer implants than single models</li>
+              <li><i class="fas fa-check-circle"></i>Implant-supported bridge design</li>
+              <li><i class="fas fa-check-circle"></i>Full chewing &amp; biting function</li>
+              <li><i class="fas fa-check-circle"></i>Natural-looking ceramic finish</li>
+              <li><i class="fas fa-check-circle"></i>No removable appliance needed</li>
+              <li><i class="fas fa-check-circle"></i>Prevents bone resorption</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- BEFORE / AFTER SLIDER — MULTIPLE -->
+        <div class="ba-section" data-aos="fade-up">
+          <div class="ba-header">
+            <span class="ti-tag-chip"><i class="fas fa-images"></i>Patient Results</span>
+            <h3 class="ba-heading">Before &amp; After</h3>
+            <p class="ba-sub">Real results from patients who chose multiple implant-supported bridge restoration at our clinic.</p>
+          </div>
+          <div class="ba-comparison-slider" data-comparison="multiple">
+            <img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=700&h=420&q=80&fit=crop" alt="Before multiple implants" class="ba-img-before" />
+            <img src="https://images.unsplash.com/photo-1522112232775-5fbd32aa5944?w=700&h=420&q=80&fit=crop" alt="After multiple implants" class="ba-img-after" />
+            <div class="ba-divider-line">
+              <div class="ba-handle"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-right"></i></div>
+              <span class="ba-label ba-label-before">Before</span>
+              <span class="ba-label ba-label-after">After</span>
+            </div>
+          </div>
+          <p class="ba-caption-text">3-unit implant bridge · posterior teeth replacement</p>
+        </div>
+
+        <!-- Row 2: treatment steps full-width -->
+        <div data-aos="fade-up">
+          <div class="ti-steps-wrap">
+            <div class="ti-steps-heading">Treatment Process</div>
+            <div class="ti-steps-row">
+              <div class="ti-step">
+                <div class="ti-step-badge" style="position:relative">
+                  <i class="fas fa-x-ray"></i>
+                  <span class="ti-step-num-label">1</span>
+                </div>
+                <div class="ti-step-title">Assessment &amp; Treatment Planning</div>
+                <p class="ti-step-desc">Digital X-rays and CBCT scanning determine ideal implant positions and bridge span.</p>
+              </div>
+              <div class="ti-step">
+                <div class="ti-step-badge" style="position:relative">
+                  <i class="fas fa-syringe"></i>
+                  <span class="ti-step-num-label">2</span>
+                </div>
+                <div class="ti-step-title">Surgical Implant Placement</div>
+                <p class="ti-step-desc">Strategic implants are placed at anchor positions using guided surgical precision.</p>
+              </div>
+              <div class="ti-step">
+                <div class="ti-step-badge" style="position:relative">
+                  <i class="fas fa-clock"></i>
+                  <span class="ti-step-num-label">3</span>
+                </div>
+                <div class="ti-step-title">Healing &amp; Temporary Bridge</div>
+                <p class="ti-step-desc">A provisional bridge keeps your smile intact while the implants integrate with the bone.</p>
+              </div>
+              <div class="ti-step">
+                <div class="ti-step-badge" style="position:relative">
+                  <i class="fas fa-check-double"></i>
+                  <span class="ti-step-num-label">4</span>
+                </div>
+                <div class="ti-step-title">Final Ceramic Bridge Fit</div>
+                <p class="ti-step-desc">Your permanent custom bridge is fitted for perfect bite, aesthetics, and comfort.</p>
+              </div>
+              <div class="ti-step">
+                <div class="ti-step-badge" style="position:relative">
+                  <i class="fas fa-stethoscope"></i>
+                  <span class="ti-step-num-label">5</span>
+                </div>
+                <div class="ti-step-title">Recheck &amp; Follow-Up</div>
+                <p class="ti-step-desc">Scheduled reviews confirm bridge stability, bite balance, and peri-implant tissue health.</p>
+              </div>
+            </div>
+          </div>
+          <a href="index.html#appointment" class="btn-gold justify-content-center d-flex mx-auto"><i class="fas fa-calendar-check"></i>Book Multiple Implant Consult</a>
+        </div>
+      </div>
+
+      <!-- ════════════════ TAB 3: ALL-ON-4 ════════════════ -->
+      <div class="ti-tab-pane" id="tab-allon4">
+        <!-- Row 1: image + intro -->
+        <div class="row g-5 align-items-center mb-4">
+          <div class="col-lg-5" data-aos="fade-right">
+            <img
+              src="https://images.pexels.com/photos/3845810/pexels-photo-3845810.jpeg?auto=compress&cs=tinysrgb&w=800&fit=max"
+              alt="All-on-4 Dental Implants" class="ti-detail-img" />
+          </div>
+          <div class="col-lg-7" data-aos="fade-left">
+            <span class="ti-tag-chip"><i class="fas fa-star"></i>All-on-4 Implants</span>
+            <h2 class="ti-title">A Full Arch of Teeth Supported by Just Four Implants</h2>
+            <p class="ti-lead">The All-on-4 technique is a revolutionary full-arch restoration. Four precisely angled implants provide the foundation for a complete, fixed set of upper or lower teeth — often delivered in a single day.</p>
+            <div class="ti-stats">
+              <div class="ti-stat"><div class="ti-stat-n">97%</div><div class="ti-stat-l">Success Rate</div></div>
+              <div class="ti-stat"><div class="ti-stat-n">12–14</div><div class="ti-stat-l">Teeth Per Arch</div></div>
+              <div class="ti-stat"><div class="ti-stat-n">4</div><div class="ti-stat-l">Implants Only</div></div>
+              <div class="ti-stat"><div class="ti-stat-n">1 Day</div><div class="ti-stat-l">Teeth in a Day</div></div>
+            </div>
+            <ul class="ti-checks">
+              <li><i class="fas fa-check-circle"></i>Full arch replacement</li>
+              <li><i class="fas fa-check-circle"></i>Same-day provisional teeth</li>
+              <li><i class="fas fa-check-circle"></i>No bone grafting required (usually)</li>
+              <li><i class="fas fa-check-circle"></i>Fixed — not removable</li>
+              <li><i class="fas fa-check-circle"></i>Restores full chewing force</li>
+              <li><i class="fas fa-check-circle"></i>Lifetime-grade hybrid bridge</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- BEFORE / AFTER SLIDER — ALL-ON-4 -->
+        <div class="ba-section" data-aos="fade-up">
+          <div class="ba-header">
+            <span class="ti-tag-chip"><i class="fas fa-images"></i>Patient Results</span>
+            <h3 class="ba-heading">Before &amp; After</h3>
+            <p class="ba-sub">Real results from patients who chose All-on-4 full-arch restoration at our clinic.</p>
+          </div>
+          <div class="ba-comparison-slider" data-comparison="allon4">
+            <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?w=700&h=420&q=80&fit=crop" alt="Before All-on-4" class="ba-img-before" />
+            <img src="https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?w=700&h=420&q=80&fit=crop" alt="After All-on-4" class="ba-img-after" />
+            <div class="ba-divider-line">
+              <div class="ba-handle"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-right"></i></div>
+              <span class="ba-label ba-label-before">Before</span>
+              <span class="ba-label ba-label-after">After</span>
+            </div>
+          </div>
+          <p class="ba-caption-text">All-on-4 full upper arch · teeth-in-a-day result</p>
+        </div>
+
+        <!-- Row 2: treatment steps full-width -->
+        <div data-aos="fade-up">
+          <div class="ti-steps-wrap">
+            <div class="ti-steps-heading">Treatment Process</div>
+            <div class="ti-steps-row">
+              <div class="ti-step">
+                <div class="ti-step-badge" style="position:relative">
+                  <i class="fas fa-laptop-medical"></i>
+                  <span class="ti-step-num-label">1</span>
+                </div>
+                <div class="ti-step-title">Full-Arch Digital Planning</div>
+                <p class="ti-step-desc">Full CBCT + digital smile design maps every implant angle for maximum bone engagement.</p>
+              </div>
+              <div class="ti-step">
+                <div class="ti-step-badge" style="position:relative">
+                  <i class="fas fa-tooth"></i>
+                  <span class="ti-step-num-label">2</span>
+                </div>
+                <div class="ti-step-title">Same-Day Surgery &amp; Provisional Teeth</div>
+                <p class="ti-step-desc">Four implants placed and a temporary fixed bridge fitted the same day — you leave smiling.</p>
+              </div>
+              <div class="ti-step">
+                <div class="ti-step-badge" style="position:relative">
+                  <i class="fas fa-hourglass-half"></i>
+                  <span class="ti-step-num-label">3</span>
+                </div>
+                <div class="ti-step-title">Integration Period</div>
+                <p class="ti-step-desc">Over 3–6 months the implants fuse securely while you use your temporary bridge normally.</p>
+              </div>
+              <div class="ti-step">
+                <div class="ti-step-badge" style="position:relative">
+                  <i class="fas fa-star"></i>
+                  <span class="ti-step-num-label">4</span>
+                </div>
+                <div class="ti-step-title">Final Hybrid Bridge Delivery</div>
+                <p class="ti-step-desc">Your permanent full-arch ceramic-titanium hybrid bridge is fitted and torqued into place.</p>
+              </div>
+              <div class="ti-step">
+                <div class="ti-step-badge" style="position:relative">
+                  <i class="fas fa-stethoscope"></i>
+                  <span class="ti-step-num-label">5</span>
+                </div>
+                <div class="ti-step-title">Recheck &amp; Follow-Up</div>
+                <p class="ti-step-desc">Regular reviews at 3, 6, and 12 months ensure your full-arch restoration performs flawlessly.</p>
+              </div>
+            </div>
+          </div>
+          <a href="index.html#appointment" class="btn-gold justify-content-center d-flex mx-auto"><i class="fas fa-calendar-check"></i>Book All-on-4 Consult</a>
+        </div>
+      </div>
+
+      <!-- ════════════════ TAB 4: MINI IMPLANTS ════════════════ -->
+      <div class="ti-tab-pane" id="tab-mini">
+        <!-- Row 1: image + intro -->
+        <div class="row g-5 align-items-center mb-4">
+          <div class="col-lg-5" data-aos="fade-right">
+            <img
+              src="https://images.pexels.com/photos/6627608/pexels-photo-6627608.jpeg?auto=compress&cs=tinysrgb&w=800&fit=max"
+              alt="Mini Dental Implants" class="ti-detail-img" />
+          </div>
+          <div class="col-lg-7" data-aos="fade-left">
+            <span class="ti-tag-chip"><i class="fas fa-seedling"></i>Mini Implants</span>
+            <h2 class="ti-title">Smaller Implants, Same Life-Changing Results</h2>
+            <p class="ti-lead">Mini dental implants have a narrower diameter than standard implants and are ideal when bone volume is limited or when stabilising a lower denture. They require minimal surgery, heal faster, and cost less than conventional implants.</p>
+            <div class="ti-stats">
+              <div class="ti-stat"><div class="ti-stat-n">94%</div><div class="ti-stat-l">Success Rate</div></div>
+              <div class="ti-stat"><div class="ti-stat-n">&lt;2h</div><div class="ti-stat-l">Procedure Time</div></div>
+              <div class="ti-stat"><div class="ti-stat-n">1–2</div><div class="ti-stat-l">Week Recovery</div></div>
+              <div class="ti-stat"><div class="ti-stat-n">Low</div><div class="ti-stat-l">Bone Required</div></div>
+            </div>
+            <ul class="ti-checks">
+              <li><i class="fas fa-check-circle"></i>Ideal for narrow bone ridges</li>
+              <li><i class="fas fa-check-circle"></i>Minimally invasive procedure</li>
+              <li><i class="fas fa-check-circle"></i>Faster healing time</li>
+              <li><i class="fas fa-check-circle"></i>Stabilise lower dentures</li>
+              <li><i class="fas fa-check-circle"></i>Lower cost than standard implants</li>
+              <li><i class="fas fa-check-circle"></i>Suitable for elderly patients</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- BEFORE / AFTER SLIDER — MINI -->
+        <div class="ba-section" data-aos="fade-up">
+          <div class="ba-header">
+            <span class="ti-tag-chip"><i class="fas fa-images"></i>Patient Results</span>
+            <h3 class="ba-heading">Before &amp; After</h3>
+            <p class="ba-sub">Real results from patients who chose mini dental implants at our clinic.</p>
+          </div>
+          <div class="ba-comparison-slider" data-comparison="mini">
+            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e66?w=700&h=420&q=80&fit=crop" alt="Before mini implants" class="ba-img-before" />
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=700&h=420&q=80&fit=crop" alt="After mini implants" class="ba-img-after" />
+            <div class="ba-divider-line">
+              <div class="ba-handle"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-right"></i></div>
+              <span class="ba-label ba-label-before">Before</span>
+              <span class="ba-label ba-label-after">After</span>
+            </div>
+          </div>
+          <p class="ba-caption-text">Mini implants stabilising lower denture · same-day loading</p>
+        </div>
+
+        <!-- Row 2: treatment steps full-width -->
+        <div data-aos="fade-up">
+          <div class="ti-steps-wrap">
+            <div class="ti-steps-heading">Treatment Process</div>
+            <div class="ti-steps-row">
+              <div class="ti-step">
+                <div class="ti-step-badge" style="position:relative">
+                  <i class="fas fa-x-ray"></i>
+                  <span class="ti-step-num-label">1</span>
+                </div>
+                <div class="ti-step-title">Bone Volume Assessment</div>
+                <p class="ti-step-desc">X-rays confirm bone width and density to establish suitability for mini implants.</p>
+              </div>
+              <div class="ti-step">
+                <div class="ti-step-badge" style="position:relative">
+                  <i class="fas fa-shield-virus"></i>
+                  <span class="ti-step-num-label">2</span>
+                </div>
+                <div class="ti-step-title">Minimally Invasive Placement</div>
+                <p class="ti-step-desc">Mini implants are placed through a tiny incision, often without the need for stitches.</p>
+              </div>
+              <div class="ti-step">
+                <div class="ti-step-badge" style="position:relative">
+                  <i class="fas fa-bolt"></i>
+                  <span class="ti-step-num-label">3</span>
+                </div>
+                <div class="ti-step-title">Immediate Loading</div>
+                <p class="ti-step-desc">In most cases the restoration or denture is attached the same day for immediate function.</p>
+              </div>
+              <div class="ti-step">
+                <div class="ti-step-badge" style="position:relative">
+                  <i class="fas fa-calendar-check"></i>
+                  <span class="ti-step-num-label">4</span>
+                </div>
+                <div class="ti-step-title">Fitting &amp; Adjustment</div>
+                <p class="ti-step-desc">The restoration or stabilised denture is carefully adjusted for optimal bite and comfort.</p>
+              </div>
+              <div class="ti-step">
+                <div class="ti-step-badge" style="position:relative">
+                  <i class="fas fa-stethoscope"></i>
+                  <span class="ti-step-num-label">5</span>
+                </div>
+                <div class="ti-step-title">Recheck &amp; Follow-Up</div>
+                <p class="ti-step-desc">A follow-up visit checks integration, adjusts the restoration if needed, and advises on long-term care.</p>
+              </div>
+            </div>
+          </div>
+          <a href="index.html#appointment" class="btn-gold justify-content-center d-flex mx-auto"><i class="fas fa-calendar-check"></i>Book Mini Implant Consult</a>
+        </div>
+      </div>
+
+    </div><!-- /.container -->
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="ti-faq-section">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="tag mb-2"><i class="fas fa-question-circle"></i>Common Questions</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="lead-text mx-auto" style="max-width:520px;">Answers to the questions our patients ask most before their implant consultation.</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+          <div class="accordion ti-faq" id="implantFaq">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                  Am I a good candidate for dental implants?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#implantFaq">
+                <div class="accordion-body">
+                  Most adults in good general health with healthy gums are suitable candidates. Our specialists assess bone density, medical history, and oral health at your free consultation to determine the best implant option for you.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                  Is the implant procedure painful?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#implantFaq">
+                <div class="accordion-body">
+                  The procedure is performed under local anaesthesia, so you will feel no pain during surgery. Mild soreness in the days following is normal and managed easily with over-the-counter pain relief. Sedation options are available for anxious patients.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                  How long do dental implants last?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#implantFaq">
+                <div class="accordion-body">
+                  With proper care, the titanium implant post can last a lifetime. Crowns and bridges typically last 15–25 years before requiring replacement. We provide a lifetime structural warranty on all implant fixtures placed at our clinic.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                  Do I need a bone graft before getting implants?
+                </button>
+              </h2>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#implantFaq">
+                <div class="accordion-body">
+                  Not always. Many patients have sufficient bone without a graft. Where bone volume is low, a bone graft is performed several months before implant placement to rebuild the necessary foundation. All-on-4 and mini implants are specifically designed to minimise or eliminate the need for grafting.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                  How do I care for my implants?
+                </button>
+              </h2>
+              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#implantFaq">
+                <div class="accordion-body">
+                  Implants are cared for just like natural teeth — brush twice daily, floss, and attend regular dental check-ups. Implant-supported bridges and full-arch restorations may require a water flosser for optimal cleaning under the bridge.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                  What can I expect during recovery and when can I return to normal activities?
+                </button>
+              </h2>
+              <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#implantFaq">
+                <div class="accordion-body">
+                  Recovery is typically quick. Most patients experience mild swelling and discomfort for 3–5 days, managed with prescribed pain relief and rest. You can return to light work and normal diet (soft foods) within a week. Strenuous exercise and contact sports should be avoided for 2–3 weeks. Full healing and osseointegration takes 8–12 weeks, during which time you must follow post-operative care instructions carefully.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="ti-cta-band" data-aos="fade-up">
+    <div class="container">
+      <span class="tag mb-3"><i class="fas fa-star"></i>Ready to Begin?</span>
+      <h2 class="section-title text-white mb-3">Get Your Free Implant Consultation</h2>
+      <p class="lead-text text-white mb-4" style="opacity:.8;max-width:520px;margin:0 auto 1.8rem;">Our implant specialists will assess your suitability, explain every option, and provide a transparent treatment plan — all at no charge.</p>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="index.html#appointment" class="btn-gold"><i class="fas fa-calendar-check"></i>Book Free Consultation</a>
+        <a href="contact.html" class="btn-outline" style="border-color:rgba(255,255,255,.4);color:#fff;"><i class="fas fa-phone"></i>Call Us Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <svg viewBox="0 0 580 150" xmlns="http://www.w3.org/2000/svg" class="f-logo">
+            <defs>
+              <linearGradient id="fG" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#9A7A1A" />
+                <stop offset="50%" stop-color="#C9A227" />
+                <stop offset="100%" stop-color="#9A7A1A" />
+              </linearGradient>
+            </defs>
+            <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-family="DM Serif Display,serif" font-size="96" fill="url(#fG)">THARISH</text>
+            <text x="50%" y="88%" dominant-baseline="middle" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-size="15" font-weight="600" letter-spacing="9" fill="#9A7A1A">DENTAL CLINIC</text>
+          </svg>
+          <p class="f-tag">Where precision meets elegance. World-class dental care with a personal touch since 2009.</p>
+          <div class="f-soc">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="f-hd">Services</div>
+          <ul class="f-links">
+            <li><a href="dental-implants.html"><i class="fas fa-circle"></i>Dental Implants</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Orthodontics</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Aesthetic Dentistry</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Periodontics</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Prosthodontics</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Pediatric Care</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Oral Surgery</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>General Dentistry</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="f-hd">Help &amp; Support</div>
+          <ul class="f-links">
+            <li><a href="about.html"><i class="fas fa-circle"></i>About Us</a></li>
+            <li><a href="team.html"><i class="fas fa-circle"></i>Our Doctors</a></li>
+            <li><a href="sterilization.html"><i class="fas fa-circle"></i>Sterilization</a></li>
+            <li><a href="equipment-showroom.html"><i class="fas fa-circle"></i>Equipment</a></li>
+            <li><a href="complication-policy.html"><i class="fas fa-circle"></i>Complication Policy</a></li>
+            <li><a href="index.html#appointment"><i class="fas fa-circle"></i>Appointment</a></li>
+            <li><a href="contact.html"><i class="fas fa-circle"></i>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="f-hd">Contact</div>
+          <ul class="f-links">
+            <li><a href="#"><i class="fas fa-circle"></i>+91 98765 43210</a></li>
+            <li><a href="#"><i class="fas fa-circle"></i>info@tharishdental.com</a></li>
+            <li><a href="#"><i class="fas fa-circle"></i>Thailand</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="f-hd">Working Hours</div>
+          <div class="f-hr-row"><span class="f-hr-day">Monday – Friday</span><span>9am – 7pm</span></div>
+          <div class="f-hr-row"><span class="f-hr-day">Saturday</span><span>9am – 6pm</span></div>
+          <div class="f-hr-row"><span class="f-hr-day">Sunday</span><span>10am – 2pm</span></div>
+          <div style="margin-top:1.3rem"><a href="index.html#appointment" class="btn-gold" style="font-size:.74rem;padding:.68rem 1.45rem"><i class="fas fa-calendar-check"></i>Book Now</a></div>
+        </div>
+      </div>
+      <div class="f-accred-row">
+        <div class="f-accred-lbl">Accreditations &amp; Certifications</div>
+        <div class="f-accred-logos">
+          <div class="f-accred-badge"><i class="fas fa-certificate"></i><span>ISO 13485</span></div>
+          <div class="f-accred-badge f-accred-badge--dbd"><span class="f-accred-dbd-txt">DBD</span><span>Registered Business</span></div>
+          <div class="f-accred-badge"><i class="fas fa-shield-alt"></i><span>ISO 9001</span></div>
+          <div class="f-accred-badge"><i class="fas fa-award"></i><span>Best Dental Clinic</span></div>
+          <div class="f-accred-badge"><i class="fas fa-star"></i><span>4.9★ Google Rating</span></div>
+        </div>
+      </div>
+      <div class="f-bot"><span>© 2026 Tharish Dental Clinic. All Rights Reserved.</span>
+        <div class="d-flex gap-3 flex-wrap"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Sitemap</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="btt"><i class="fas fa-chevron-up"></i></a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="assets/page.js"></script>
+  <script>
+    // ── INTERACTIVE BEFORE / AFTER SLIDERS ───────────────
+    (function () {
+      const sliders = document.querySelectorAll('.ba-comparison-slider');
+
+      sliders.forEach(slider => {
+        let isDragging = false;
+
+        function updateDivider(e) {
+          const rect = slider.getBoundingClientRect();
+          const x = e.type.startsWith('touch') ? e.touches[0].clientX : e.clientX;
+          const relX = x - rect.left;
+          const percent = Math.max(0, Math.min(100, (relX / rect.width) * 100));
+
+          slider.style.setProperty('--divider-x', percent + '%');
+          slider.style.setProperty('--reveal-percent', (100 - percent) + '%');
+        }
+
+        slider.addEventListener('mousedown', (e) => {
+          isDragging = true;
+          slider.classList.add('dragging');
+          updateDivider(e);
+        });
+
+        slider.addEventListener('touchstart', (e) => {
+          isDragging = true;
+          slider.classList.add('dragging');
+          updateDivider(e);
+        });
+
+        document.addEventListener('mousemove', (e) => {
+          if (isDragging) updateDivider(e);
+        });
+
+        document.addEventListener('touchmove', (e) => {
+          if (isDragging) updateDivider(e);
+        });
+
+        document.addEventListener('mouseup', () => {
+          isDragging = false;
+          slider.classList.remove('dragging');
+        });
+
+        document.addEventListener('touchend', () => {
+          isDragging = false;
+          slider.classList.remove('dragging');
+        });
+
+        // Initialize divider at 50%
+        slider.style.setProperty('--divider-x', '50%');
+        slider.style.setProperty('--reveal-percent', '50%');
+      });
+    })();
+
+    // ── TAB SWITCHING ────────────────────────────────────
+    (function () {
+      const tabBtns = document.querySelectorAll('.ti-tab-btn');
+      const tabPanes = document.querySelectorAll('.ti-tab-pane');
+
+      function activateTab(tabId) {
+        tabBtns.forEach(b => {
+          b.classList.toggle('active', b.dataset.tab === tabId);
+          b.setAttribute('aria-selected', b.dataset.tab === tabId);
+        });
+        tabPanes.forEach(p => {
+          p.classList.toggle('active', p.id === 'tab-' + tabId);
+        });
+        // re-trigger AOS animations inside newly visible pane
+        if (typeof AOS !== 'undefined') AOS.refresh();
+      }
+
+      tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => activateTab(btn.dataset.tab));
+      });
+
+      // Support ?tab=xxx query param (from navbar sub-menu links)
+      const params = new URLSearchParams(window.location.search);
+      const initialTab = params.get('tab');
+      if (initialTab) activateTab(initialTab);
+    })();
+
+    // ── AOS INIT ────────────────────────────────────────
+    AOS.init({ duration: 700, once: true, offset: 60 });
+  </script>
+</body>
+
+</html>

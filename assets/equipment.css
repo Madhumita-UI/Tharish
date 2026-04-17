@@ -1,0 +1,512 @@
+/* ======================================================
+   EQUIPMENT.CSS — Tharish Dental Clinic Equipment Page
+   ====================================================== */
+
+/* ── PAGE HERO ─────────────────────────────────────────── */
+.eq-page-hero {
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  padding: 140px 0 80px;
+  overflow: hidden;
+}
+.eq-ph-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center 30%;
+  transform: scale(1.04);
+}
+.eq-ph-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(26, 18, 4,.85) 0%, rgba(201, 162, 39,.7) 100%);
+}
+.eq-ph-inner {
+  position: relative;
+  z-index: 2;
+}
+.btn-white {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .78rem 2rem;
+  border-radius: 50px;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  background: rgba(255,255,255,.15);
+  color: #fff;
+  border: 1.5px solid rgba(255,255,255,.4);
+  cursor: pointer;
+  transition: background .25s, border-color .25s;
+  text-decoration: none;
+  backdrop-filter: blur(6px);
+}
+.btn-white:hover {
+  background: rgba(255,255,255,.28);
+  border-color: #fff;
+  color: #fff;
+}
+
+/* ── SECTION BASE ──────────────────────────────────────── */
+.eq-section {
+  padding: 90px 0;
+}
+
+/* ── STERILIZATION DASHBOARD ───────────────────────────── */
+.dash-stat-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.4rem 1.4rem 1.2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  height: 100%;
+  transition: transform .22s, box-shadow .22s;
+}
+.dash-stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+.dsc-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--gold), var(--gold));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.15rem;
+  flex-shrink: 0;
+}
+.dsc-body { flex: 1; min-width: 0; }
+.dsc-val {
+  font-size: .93rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.3;
+  margin-bottom: .2rem;
+}
+.dsc-lbl {
+  font-size: .72rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  margin-bottom: .5rem;
+}
+.dsc-badge {
+  display: inline-block;
+  padding: .18rem .65rem;
+  border-radius: 50px;
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.dsc-badge.pass   { background: #D1FAE5; color: #065F46; }
+.dsc-badge.gold   { background: var(--gold-soft); color: var(--gold-dk); }
+
+/* ── TABLE CARD ────────────────────────────────────────── */
+.eq-table-card {
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  height: 100%;
+}
+.eq-tc-head {
+  background: linear-gradient(90deg, var(--dark) 0%, var(--dark-mid) 100%);
+  color: #fff;
+  padding: .9rem 1.2rem;
+  font-size: .8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  flex-wrap: wrap;
+}
+.eq-tc-updated {
+  font-weight: 400;
+  font-size: .7rem;
+  color: rgba(255,255,255,.6);
+  margin-left: auto;
+}
+.eq-log-table {
+  margin: 0;
+  font-size: .77rem;
+}
+.eq-log-table th {
+  background: var(--off2);
+  color: var(--muted);
+  font-size: .69rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  border: none;
+  padding: .65rem 1rem;
+}
+.eq-log-table td {
+  padding: .6rem 1rem;
+  border-color: var(--border);
+  vertical-align: middle;
+  color: var(--text);
+}
+.eq-log-table tbody tr:hover { background: var(--gold-pale); }
+.badge-pass {
+  display: inline-block;
+  padding: .16rem .6rem;
+  background: #D1FAE5;
+  color: #065F46;
+  border-radius: 50px;
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+}
+
+/* ── SERIAL CARD ───────────────────────────────────────── */
+.eq-serial-card {
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  height: 100%;
+}
+.eq-sc-head {
+  background: linear-gradient(90deg, var(--gold-dk) 0%, var(--gold) 100%);
+  color: #fff;
+  padding: .9rem 1.2rem;
+  font-size: .8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+}
+.eq-serial-row {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: .85rem 1.2rem;
+  border-bottom: 1px solid var(--border);
+  transition: background .15s;
+}
+.eq-serial-row:last-child { border-bottom: none; }
+.eq-serial-row:hover { background: var(--gold-pale); }
+.eq-sr-name {
+  font-size: .73rem;
+  font-weight: 700;
+  color: var(--gold-dk);
+  width: 110px;
+  flex-shrink: 0;
+  padding-top: .1rem;
+}
+.eq-sr-det {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: .1rem;
+  font-size: .72rem;
+  color: var(--text);
+}
+.eq-sr-serial {
+  color: var(--muted);
+  font-family: 'Courier New', monospace;
+  font-size: .68rem;
+}
+.eq-sr-warranty { font-size: .67rem; font-weight: 700; }
+.eq-sr-warranty.valid { color: #065F46; }
+
+/* ── PROTOCOL BANNER ───────────────────────────────────── */
+.eq-protocol-banner {
+  background: linear-gradient(135deg, var(--dark) 0%, var(--dark-soft) 50%, var(--gold-dk) 100%);
+  border-radius: 20px;
+  padding: 2.8rem 2.5rem;
+  color: #fff;
+}
+.eq-pb-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.25rem;
+  color: var(--gold-lt);
+  text-align: center;
+  margin-bottom: 2.2rem;
+}
+.eq-protocol-steps {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.eq-step {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 16px;
+  padding: 1.4rem 1.2rem;
+  text-align: center;
+  flex: 1;
+  min-width: 160px;
+  max-width: 210px;
+  backdrop-filter: blur(6px);
+}
+.eq-step-num {
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  color: var(--gold-lt);
+  text-transform: uppercase;
+  margin-bottom: .6rem;
+}
+.eq-step-ic {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--gold), var(--gold));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: #fff;
+  margin: 0 auto .9rem;
+}
+.eq-step-ttl {
+  font-size: .82rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+.eq-step-dsc {
+  font-size: .72rem;
+  color: rgba(255,255,255,.7);
+  line-height: 1.6;
+}
+.eq-step-arrow {
+  color: var(--gold-lt);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+@media (max-width: 767px) {
+  .eq-step-arrow { display: none; }
+  .eq-step { max-width: 100%; }
+}
+
+/* ── EQUIPMENT SHOWROOM ────────────────────────────────── */
+.eq-show-card {
+  background: #fff;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform .22s, box-shadow .22s;
+}
+.eq-show-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+.eq-show-img {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+.eq-show-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .4s;
+}
+.eq-show-card:hover .eq-show-img img { transform: scale(1.05); }
+.eq-show-tag {
+  position: absolute;
+  bottom: .75rem;
+  left: .75rem;
+  background: linear-gradient(135deg, var(--gold), var(--gold));
+  color: #fff;
+  font-size: .63rem;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  padding: .28rem .75rem;
+  border-radius: 50px;
+}
+.eq-show-body {
+  padding: 1.35rem 1.4rem 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.eq-show-brand {
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: .3rem;
+}
+.eq-show-name {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.08rem;
+  color: var(--text);
+  margin-bottom: .8rem;
+  line-height: 1.35;
+}
+.eq-show-desc {
+  font-size: .78rem;
+  color: var(--muted);
+  line-height: 1.75;
+  flex: 1;
+  margin-bottom: 1rem;
+}
+.eq-show-badges {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+.eq-sbadge {
+  display: inline-flex;
+  align-items: center;
+  gap: .3rem;
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--gold-dk);
+  background: var(--gold-pale);
+  border: 1px solid var(--gold-soft);
+  border-radius: 50px;
+  padding: .22rem .7rem;
+}
+.eq-sbadge i { font-size: .55rem; color: var(--gold); }
+
+/* ── COMPLICATION POLICY ───────────────────────────────── */
+.policy-card {
+  background: var(--off2);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2.2rem 2.4rem;
+  height: 100%;
+}
+.policy-card-alt {
+  background: var(--gold-pale);
+  border-color: var(--gold-soft);
+}
+.policy-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--gold), var(--gold));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+}
+.policy-icon-gold {
+  background: linear-gradient(135deg, var(--gold-dk), var(--gold-lt));
+}
+.policy-ttl {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.35rem;
+  color: var(--text);
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+.policy-txt {
+  font-size: .84rem;
+  color: var(--muted);
+  line-height: 1.85;
+  margin-bottom: .85rem;
+}
+.policy-commit { margin-top: 1.2rem; }
+.pc-item {
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+  font-size: .8rem;
+  font-weight: 600;
+  color: var(--text);
+  padding: .48rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.policy-card-alt .pc-item { border-bottom-color: var(--gold-soft); }
+.pc-item:last-child { border-bottom: none; }
+.pc-item i { color: var(--gold); font-size: .8rem; flex-shrink: 0; }
+.policy-card-alt .pc-item i { color: var(--gold-dk); }
+
+.policy-quote {
+  background: linear-gradient(135deg, var(--dark) 0%, var(--dark-soft) 100%);
+  border-radius: 14px;
+  padding: 1.4rem 1.8rem;
+  margin-top: 1.5rem;
+}
+.policy-quote blockquote {
+  font-family: 'DM Serif Display', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--gold-lt);
+  margin: 0 0 .5rem;
+  line-height: 1.5;
+  border: none;
+  padding: 0;
+}
+.policy-quote cite {
+  font-size: .72rem;
+  color: rgba(255,255,255,.6);
+  font-style: normal;
+}
+
+/* ── TRUST CHIPS (policy section) ─────────────────────── */
+.s-chip {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.4rem 1rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform .2s, box-shadow .2s;
+}
+.s-chip:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+.s-chip-n {
+  font-size: 1.8rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--gold), var(--gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.15;
+  margin-bottom: .3rem;
+}
+.s-chip-l {
+  font-size: .7rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  line-height: 1.4;
+}
+
+/* ── REVEAL ANIMATIONS (matches main site) ─────────────── */
+.rv, .rl, .rr {
+  opacity: 0;
+  transition: opacity .65s ease, transform .65s ease;
+}
+.rv { transform: translateY(30px); }
+.rl { transform: translateX(-30px); }
+.rr { transform: translateX(30px); }
+.rv.in, .rl.in, .rr.in { opacity: 1; transform: none; }
+
+.d1 { transition-delay: .0s; }
+.d2 { transition-delay: .1s; }
+.d3 { transition-delay: .2s; }
+.d4 { transition-delay: .3s; }

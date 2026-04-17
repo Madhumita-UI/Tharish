@@ -356,6 +356,13 @@
     color: #fff;
 }
 
+.ti-step-badge .ti-step-img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
 .ti-step-num-label {
     position: absolute;
     top: -6px;

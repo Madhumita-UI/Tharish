@@ -70,7 +70,8 @@ h4 {
     line-height: 1.18;
     color: var(--text)
 }
-p{
+
+p {
     line-height: 1.1;
 }
 
@@ -562,7 +563,7 @@ p{
         padding: .6rem 0 !important;
     }
 
-    .dropdown.show > .treat-drop {
+    .dropdown.show>.treat-drop {
         display: block !important;
     }
 
@@ -591,7 +592,7 @@ p{
         transition: max-height .25s ease, opacity .2s ease !important;
     }
 
-    .treat-has-sub.expanded > .treat-submenu {
+    .treat-has-sub.expanded>.treat-submenu {
         visibility: visible !important;
         opacity: 1 !important;
         pointer-events: auto !important;
@@ -600,7 +601,7 @@ p{
         max-height: 600px !important;
     }
 
-    .treat-has-sub.expanded > .dropdown-item {
+    .treat-has-sub.expanded>.dropdown-item {
         background: var(--gold-pale);
         color: var(--gold-dk);
     }
@@ -963,26 +964,36 @@ p{
 }
 
 .svc-ic {
-    width: 66px;
-    height: 66px;
+    width: 200px;
+    height: 120px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--gold-pale), var(--gold-soft));
-    display: flex;
+    /* background: linear-gradient(135deg, var(--gold-pale), var(--gold-soft)); */
+    /* display: flex; */
     align-items: center;
     justify-content: center;
     margin: 0 auto 1rem;
-    font-size: 1.45rem;
+    /* font-size: 1.45rem; */
     color: var(--gold);
     transition: all .35s;
-    border: 1.5px solid var(--gold-soft)
+    /* border: 1.5px solid var(--gold-soft); */
 }
 
-.svc:hover .svc-ic {
+.svc-ic img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* .svc:hover .svc-ic {
     background: linear-gradient(135deg, var(--gold), var(--gold-dk));
     color: #fff;
     border-color: var(--gold);
     box-shadow: 0 6px 18px rgba(201, 162, 39, .35)
-}
+} */
+
+/* .svc:hover .svc-ic img {
+    filter: brightness(0) invert(1);
+} */
 
 .svc-ttl {
     font-family: 'DM Serif Display', serif;
@@ -2909,9 +2920,11 @@ footer {
     border-top: 4px solid #4285F4;
     background: linear-gradient(160deg, #eef4ff 0%, #fff 55%)
 }
+
 #testimonials .testi-swiper .swiper-slide:nth-child(7n+1) .testi-av {
     background: linear-gradient(135deg, #4285F4, #1a6ed8)
 }
+
 #testimonials .testi-swiper .swiper-slide:nth-child(7n+1) .testi::before {
     color: rgba(66, 133, 244, .14)
 }
@@ -2921,9 +2934,11 @@ footer {
     border-top: 4px solid #EA4335;
     background: linear-gradient(160deg, #fff0ef 0%, #fff 55%)
 }
+
 #testimonials .testi-swiper .swiper-slide:nth-child(7n+2) .testi-av {
     background: linear-gradient(135deg, #EA4335, #b71c1c)
 }
+
 #testimonials .testi-swiper .swiper-slide:nth-child(7n+2) .testi::before {
     color: rgba(234, 67, 53, .14)
 }
@@ -2933,9 +2948,11 @@ footer {
     border-top: 4px solid #34A853;
     background: linear-gradient(160deg, #edfaf2 0%, #fff 55%)
 }
+
 #testimonials .testi-swiper .swiper-slide:nth-child(7n+3) .testi-av {
     background: linear-gradient(135deg, #34A853, #1b5e20)
 }
+
 #testimonials .testi-swiper .swiper-slide:nth-child(7n+3) .testi::before {
     color: rgba(52, 168, 83, .14)
 }
@@ -2945,10 +2962,12 @@ footer {
     border-top: 4px solid #FBBC05;
     background: linear-gradient(160deg, #fffbea 0%, #fff 55%)
 }
+
 #testimonials .testi-swiper .swiper-slide:nth-child(7n+4) .testi-av {
     background: linear-gradient(135deg, #FBBC05, #e65100);
     color: #fff
 }
+
 #testimonials .testi-swiper .swiper-slide:nth-child(7n+4) .testi::before {
     color: rgba(251, 188, 5, .18)
 }
@@ -2958,9 +2977,11 @@ footer {
     border-top: 4px solid #9C27B0;
     background: linear-gradient(160deg, #f9eeff 0%, #fff 55%)
 }
+
 #testimonials .testi-swiper .swiper-slide:nth-child(7n+5) .testi-av {
     background: linear-gradient(135deg, #9C27B0, #4a0072)
 }
+
 #testimonials .testi-swiper .swiper-slide:nth-child(7n+5) .testi::before {
     color: rgba(156, 39, 176, .13)
 }
@@ -2970,9 +2991,11 @@ footer {
     border-top: 4px solid #00ACC1;
     background: linear-gradient(160deg, #e8fbfd 0%, #fff 55%)
 }
+
 #testimonials .testi-swiper .swiper-slide:nth-child(7n+6) .testi-av {
     background: linear-gradient(135deg, #00ACC1, #006064)
 }
+
 #testimonials .testi-swiper .swiper-slide:nth-child(7n+6) .testi::before {
     color: rgba(0, 172, 193, .14)
 }
@@ -2982,9 +3005,11 @@ footer {
     border-top: 4px solid #FF5722;
     background: linear-gradient(160deg, #fff3ef 0%, #fff 55%)
 }
+
 #testimonials .testi-swiper .swiper-slide:nth-child(7n+7) .testi-av {
     background: linear-gradient(135deg, #FF5722, #bf360c)
 }
+
 #testimonials .testi-swiper .swiper-slide:nth-child(7n+7) .testi::before {
     color: rgba(255, 87, 34, .14)
 }

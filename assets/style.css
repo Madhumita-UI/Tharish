@@ -75,6 +75,10 @@ p {
     line-height: 1.1;
 }
 
+section{
+    overflow: hidden;
+}
+
 .tag {
     align-items: center;
     gap: .38rem;
@@ -434,7 +438,7 @@ p {
     border-radius: 14px !important;
     box-shadow: 0 12px 40px rgba(26, 18, 4, .14) !important;
     padding: .6rem !important;
-    min-width: 380px !important;
+    min-width: 300px !important;
     border-top: 2px solid var(--gold) !important;
     margin-top: 0 !important;
     padding-top: calc(.6rem + 6px) !important;

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog — Tharish Dental Clinic</title>
+  <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="assets/blog.css" />
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div id="topbar">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex gap-4 flex-wrap">
+          <span class="info"><i class="fas fa-phone"></i>+91 98765 43210</span>
+          <span class="info d-none d-md-flex"><i class="fas fa-clock"></i>Mon-Sat: 9AM-7PM &nbsp;|&nbsp; Sun: 10AM-2PM</span>
+          <span class="info d-none d-lg-flex"><i class="fas fa-map-marker-alt"></i>Thailand</span>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <div class="lang-toggle" id="langToggle" role="group" aria-label="Language">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="th">TH</button>
+          </div>
+          <div class="socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo.png" alt="Tharish Dental Clinic Logo" height="42" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navM"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse justify-content-end" id="navM">
+        <ul class="navbar-nav align-items-center gap-1 ms-4">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="caseDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Case Studies <i class="fas fa-chevron-down treat-arrow"></i>
+            </a>
+            <ul class="dropdown-menu treat-drop shadow" aria-labelledby="caseDrop">
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-tooth"></i>Implant Cases</a></li>
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-smile"></i>Orthodontic Cases</a></li>
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-star"></i>Aesthetic Cases</a></li>
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-crown"></i>Full Mouth Rehab</a></li>
+              <li><a class="dropdown-item" href="case-studies.html"><i class="fas fa-child"></i>Pediatric Cases</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="treatDrop" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+              Treatments <i class="fas fa-chevron-down treat-arrow"></i>
+            </a>
+            <ul class="dropdown-menu treat-drop shadow" aria-labelledby="treatDrop">
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-star"></i>Aesthetic Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Teeth Whitening</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Porcelain Veneers</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Dental Bonding</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Smile Makeover</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="dental-implants.html"><i class="fas fa-tooth"></i>Dental Implants<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="dental-implants.html?tab=single">Single Implants</a></li>
+                  <li><a class="dropdown-item" href="dental-implants.html?tab=multiple">Multiple Implants</a></li>
+                  <li><a class="dropdown-item" href="dental-implants.html?tab=allon4">All-on-4 Implants</a></li>
+                  <li><a class="dropdown-item" href="dental-implants.html?tab=mini">Mini Implants</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-syringe"></i>Endodontic Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Root Canal Treatment</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Retreatment</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Pulp Capping</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Apicoectomy</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-check-double"></i>General Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Cleaning &amp; Scaling</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Dental Fillings</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">X-Rays &amp; Diagnosis</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Preventive Care</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-shield-alt"></i>Occlusion Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Bite Correction</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Night Guards</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">TMJ Treatment</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Occlusal Splints</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-teeth-open"></i>Oral Surgery<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Tooth Extraction</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Wisdom Teeth Removal</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Bone Grafting</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Jaw Surgery</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-smile"></i>Orthodontic Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Metal Braces</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Clear Aligners</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Lingual Braces</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Retainers</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-child"></i>Pediatric Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Baby Teeth Care</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Fluoride Treatment</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Dental Sealants</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Space Maintainers</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-leaf"></i>Periodontic Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Gum Disease Treatment</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Scaling &amp; Root Planing</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Gum Surgery</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Bone Grafting</a></li>
+                </ul>
+              </li>
+              <li class="treat-has-sub">
+                <a class="dropdown-item" href="index.html#treatments"><i class="fas fa-crown"></i>Prosthodontic Dentistry<i class="fas fa-chevron-right treat-sub-arrow"></i></a>
+                <ul class="treat-submenu">
+                  <li><a class="dropdown-item" href="index.html#treatments">Dental Crowns</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Bridges</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Dentures</a></li>
+                  <li><a class="dropdown-item" href="index.html#treatments">Inlays &amp; Onlays</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="team.html">Doctors</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="techDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Technology <i class="fas fa-chevron-down treat-arrow"></i>
+            </a>
+            <ul class="dropdown-menu treat-drop shadow" aria-labelledby="techDrop">
+              <li><a class="dropdown-item" href="sterilization.html"><i class="fas fa-shield-virus"></i>Sterilization &amp; Quality</a></li>
+              <li><a class="dropdown-item" href="equipment-showroom.html"><i class="fas fa-microscope"></i>Equipment Showroom</a></li>
+              <li><a class="dropdown-item" href="complication-policy.html"><i class="fas fa-handshake"></i>Complication Policy</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-2"><a class="nav-link nav-cta" href="index.html#appointment">Book Now</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="blog-hero">
+    <div class="blog-hero-bg"></div>
+    <div class="blog-hero-overlay"></div>
+    <div class="container blog-hero-inner">
+      <div class="row">
+        <div class="col-lg-8">
+          <nav class="blog-breadcrumb" aria-label="breadcrumb">
+            <a href="index.html">Home</a>
+            <i class="fas fa-chevron-right sep"></i>
+            <span class="current">Blog</span>
+          </nav>
+          <span class="tag mb-2"><i class="fas fa-newspaper"></i>Dental Insights</span>
+          <h1 class="section-title text-white mb-3">Practical Guides For Better Oral Health</h1>
+          <p class="lead-text text-white" style="opacity:.86;max-width:620px;">Explore evidence-backed articles from our doctors on implants, preventive care, pediatric dentistry, and smile aesthetics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog-wrap">
+    <div class="container">
+      <div class="row align-items-end g-4">
+        <div class="col-lg-7" data-aos="fade-up">
+          <div class="blog-headline">
+            <span class="tag mb-2" style="margin:0 0 .5rem;"><i class="fas fa-book-open"></i>Latest Articles</span>
+            <h2 class="section-title mb-2">Blog List</h2>
+            <p class="lead-text mb-0">Find easy-to-understand answers to common dental concerns and treatment planning questions.</p>
+          </div>
+        </div>
+        <div class="col-lg-5" data-aos="fade-left">
+          <div class="blog-search mb-2">
+            <i class="fas fa-search"></i>
+            <input type="search" placeholder="Search blog topics..." aria-label="Search blog topics" />
+          </div>
+          <div class="blog-cats">
+            <button class="blog-cat active">All</button>
+            <button class="blog-cat">Implants</button>
+            <button class="blog-cat">Cosmetic</button>
+            <button class="blog-cat">Pediatric</button>
+            <button class="blog-cat">Preventive</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 blog-grid">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
+          <article class="blog-card">
+            <div class="blog-thumb">
+              <img src="https://images.unsplash.com/photo-1593022356769-11f762e25ed9?w=1000&q=80&auto=format&fit=crop" alt="Dental implant consultation" />
+              <span class="blog-chip"><i class="fas fa-tooth"></i>Implants</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span><i class="fas fa-calendar"></i>12 Mar 2026</span>
+                <span><i class="fas fa-clock"></i>6 Min Read</span>
+              </div>
+              <h3 class="blog-title">How To Prepare For Your First Dental Implant Appointment</h3>
+              <p class="blog-excerpt">A step-by-step checklist from scans to healing timelines so your implant treatment feels smooth and predictable.</p>
+              <a class="blog-read" href="blog-details.html"><span>Read Article</span><i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="120">
+          <article class="blog-card">
+            <div class="blog-thumb">
+              <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=1000&q=80&auto=format&fit=crop" alt="Teeth whitening shade chart" />
+              <span class="blog-chip"><i class="fas fa-star"></i>Cosmetic</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span><i class="fas fa-calendar"></i>05 Mar 2026</span>
+                <span><i class="fas fa-clock"></i>4 Min Read</span>
+              </div>
+              <h3 class="blog-title">Whitening Vs Veneers: Which Smile Upgrade Fits You Best?</h3>
+              <p class="blog-excerpt">Understand cost, longevity, and suitability to choose the right route for a brighter, balanced smile.</p>
+              <a class="blog-read" href="blog-details.html"><span>Read Article</span><i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="190">
+          <article class="blog-card">
+            <div class="blog-thumb">
+              <img src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?w=1000&q=80&auto=format&fit=crop" alt="Child at dental visit" />
+              <span class="blog-chip"><i class="fas fa-child"></i>Pediatric</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span><i class="fas fa-calendar"></i>24 Feb 2026</span>
+                <span><i class="fas fa-clock"></i>5 Min Read</span>
+              </div>
+              <h3 class="blog-title">First Dental Visit For Kids: What Parents Should Expect</h3>
+              <p class="blog-excerpt">A gentle plan to help children feel comfortable while building healthy oral care habits from the start.</p>
+              <a class="blog-read" href="blog-details.html"><span>Read Article</span><i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="60">
+          <article class="blog-card">
+            <div class="blog-thumb">
+              <img src="https://images.unsplash.com/photo-1588776814546-daab30f310ce?w=1000&q=80&auto=format&fit=crop" alt="Dentist explaining X-ray" />
+              <span class="blog-chip"><i class="fas fa-shield-alt"></i>Preventive</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span><i class="fas fa-calendar"></i>17 Feb 2026</span>
+                <span><i class="fas fa-clock"></i>7 Min Read</span>
+              </div>
+              <h3 class="blog-title">Why Regular Scaling Prevents More Than Just Bad Breath</h3>
+              <p class="blog-excerpt">Discover how routine cleanings protect gum health, reduce future costs, and preserve your natural teeth longer.</p>
+              <a class="blog-read" href="blog-details.html"><span>Read Article</span><i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="130">
+          <article class="blog-card">
+            <div class="blog-thumb">
+              <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1000&q=80&auto=format&fit=crop" alt="Dental aligner case" />
+              <span class="blog-chip"><i class="fas fa-smile"></i>Orthodontics</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span><i class="fas fa-calendar"></i>09 Feb 2026</span>
+                <span><i class="fas fa-clock"></i>5 Min Read</span>
+              </div>
+              <h3 class="blog-title">Clear Aligners Timeline: Month-By-Month Smile Progress</h3>
+              <p class="blog-excerpt">From your first digital scan to retention, here is what the aligner journey usually looks like.</p>
+              <a class="blog-read" href="blog-details.html"><span>Read Article</span><i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <article class="blog-card">
+            <div class="blog-thumb">
+              <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=1000&q=80&auto=format&fit=crop" alt="Toothache emergency support" />
+              <span class="blog-chip"><i class="fas fa-first-aid"></i>Emergency</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span><i class="fas fa-calendar"></i>01 Feb 2026</span>
+                <span><i class="fas fa-clock"></i>3 Min Read</span>
+              </div>
+              <h3 class="blog-title">Tooth Pain At Night? 7 Things To Do Before You Reach The Clinic</h3>
+              <p class="blog-excerpt">Immediate at-home measures that can reduce pain and protect the affected tooth before treatment.</p>
+              <a class="blog-read" href="blog-details.html"><span>Read Article</span><i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="blog-pagination" data-aos="fade-up">
+        <a href="#" class="blog-page active">1</a>
+        <a href="#" class="blog-page">2</a>
+        <a href="#" class="blog-page">3</a>
+        <a href="#" class="blog-page"><i class="fas fa-chevron-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <svg viewBox="0 0 580 150" xmlns="http://www.w3.org/2000/svg" class="f-logo">
+            <defs>
+              <linearGradient id="fG" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#9A7A1A" />
+                <stop offset="50%" stop-color="#C9A227" />
+                <stop offset="100%" stop-color="#9A7A1A" />
+              </linearGradient>
+            </defs>
+            <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-family="DM Serif Display,serif" font-size="96" fill="url(#fG)">THARISH</text>
+            <text x="50%" y="88%" dominant-baseline="middle" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-size="15" font-weight="600" letter-spacing="9" fill="#9A7A1A">DENTAL CLINIC</text>
+          </svg>
+          <p class="f-tag">Where precision meets elegance. World-class dental care with a personal touch since 2009.</p>
+          <div class="f-soc">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="f-hd">Services</div>
+          <ul class="f-links">
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Aesthetic Dentistry</a></li>
+            <li><a href="dental-implants.html"><i class="fas fa-circle"></i>Dental Implants</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Endodontics</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>General Dentistry</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Occlusion Dentistry</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Oral Surgery</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Orthodontics</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Pediatric Dentistry</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Periodontics</a></li>
+            <li><a href="index.html#treatments"><i class="fas fa-circle"></i>Prosthodontics</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="f-hd">Help &amp; Support</div>
+          <ul class="f-links">
+            <li><a href="about.html"><i class="fas fa-circle"></i>About Us</a></li>
+            <li><a href="team.html"><i class="fas fa-circle"></i>Our Doctors</a></li>
+            <li><a href="index.html#equipment"><i class="fas fa-circle"></i>Technology</a></li>
+            <li><a href="index.html#appointment"><i class="fas fa-circle"></i>Appointment</a></li>
+            <li><a href="blog.html"><i class="fas fa-circle"></i>Blog &amp; Guides</a></li>
+            <li><a href="contact.html"><i class="fas fa-circle"></i>Contact Us</a></li>
+            <li><a href="#"><i class="fas fa-circle"></i>Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="f-hd">Contact</div>
+          <ul class="f-links">
+            <li><a href="#"><i class="fas fa-circle"></i>+91 98765 43210</a></li>
+            <li><a href="#"><i class="fas fa-circle"></i>info@tharishdental.com</a></li>
+            <li><a href="#"><i class="fas fa-circle"></i>Thailand</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="f-hd">Working Hours</div>
+          <div class="f-hr-row"><span class="f-hr-day">Monday - Friday</span><span>9am - 7pm</span></div>
+          <div class="f-hr-row"><span class="f-hr-day">Saturday</span><span>9am - 6pm</span></div>
+          <div class="f-hr-row"><span class="f-hr-day">Sunday</span><span>10am - 2pm</span></div>
+          <div style="margin-top:1.3rem"><a href="index.html#appointment" class="btn-gold" style="font-size:.74rem;padding:.68rem 1.45rem"><i class="fas fa-calendar-check"></i>Book Now</a></div>
+        </div>
+      </div>
+      <div class="f-accred-row">
+        <div class="f-accred-lbl">Accreditations &amp; Certifications</div>
+        <div class="f-accred-logos">
+          <div class="f-accred-badge"><i class="fas fa-certificate"></i><span>ISO 13485</span></div>
+          <div class="f-accred-badge f-accred-badge--dbd"><span class="f-accred-dbd-txt">DBD</span><span>Registered Business</span></div>
+          <div class="f-accred-badge"><i class="fas fa-shield-alt"></i><span>ISO 9001</span></div>
+          <div class="f-accred-badge"><i class="fas fa-award"></i><span>Best Dental Clinic</span></div>
+          <div class="f-accred-badge"><i class="fas fa-star"></i><span>4.9 Google Rating</span></div>
+        </div>
+      </div>
+      <div class="f-bot"><span>© 2026 Tharish Dental Clinic. All Rights Reserved.</span>
+        <div class="d-flex gap-3 flex-wrap"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Sitemap</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="btt"><i class="fas fa-chevron-up"></i></a>
+
+  <div id="cookieBanner" class="cookie-banner" role="alert" aria-live="polite">
+    <div class="container">
+      <div class="cookie-inner">
+        <div class="cookie-text">
+          <i class="fas fa-cookie-bite"></i>
+          <span>We use cookies to enhance your browsing experience, analyse site traffic, and personalise content. By clicking <strong>Accept All</strong>, you consent to our use of cookies. <a href="#">Learn more</a></span>
+        </div>
+        <div class="cookie-actions">
+          <button class="cookie-btn-outline" id="cookieDecline">Essential Only</button>
+          <button class="cookie-btn-gold" id="cookieAccept">Accept All</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="assets/page.js"></script>
+  <script>
+    AOS.init({ duration: 700, once: true, offset: 60 });
+  </script>
+</body>
+
+</html>
